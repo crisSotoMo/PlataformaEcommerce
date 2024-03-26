@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #042A51, #04497b);
+  height: 100vh;
+  font-family: Montserrat SemiBold 600;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu de Iniciar Sesion y Registrarse */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.logInAndSignInContainer {
+  width: 100%;
+  max-width: 520px;
+  min-height: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.logInAndSignInTitleContainer {
+  .logInAndSignInTitle {
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+
+    li {
+      width: 50%;
+      transition: .5s ease-in-out;
+
+      &:nth-child(2) {
+        border-left: 3px solid #404040;
+      }
+
+      a {
+        color: #404040;
+        font-weight: 800;
+        font-family: Montserrat Bold 700;
+      }
+    }
+
+    .underline {
+      width: 100%;
+      height: 2px;
+      background-color: #043965;
+      margin-top: 5px;
+    }
+  }
+
+  .login.active,
+  .sign-in.active {
+    border-bottom: 2px solid #043965;
+    padding-bottom: 5px;
+  }
+}
+
+/* ---------------------------------- */
+
+.logInAndSignInDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+
+.inputsSections {
+  position: relative;
+  padding-top: 10px;
+}
+
+.inputsSections i {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.inputsSections input {
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.input {
+  width: 300px;
+  font-size: 20px;
+}
+
+#signInButton {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 15px;
+  background-color: #043965;
+  margin-right: 15px;
+  color: #fff;
+}
+
+
+.fotoCompradorLabel{
+
+    font-size: 20px;
+
+}
