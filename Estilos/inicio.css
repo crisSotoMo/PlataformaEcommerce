@@ -1,23 +1,237 @@
+/* Estilos Globales */
 body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #FFF;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del Header */
+.logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: "Montserrat";
+    color: #042A51;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    margin: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.navHeader ul a {
+    margin: 15px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    color: #042A51;
+    text-decoration: none;
+}
+
+.navHeader li a:hover {
+    border-bottom-color: #8DC63F;
+    cursor: pointer;
+}
+
+/* Main Styles */
+main {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #E1E1E1;
+}
+
+.adviceContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.cnpContainer,
+.registerContainer {
+    background-color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 700px;
+    padding: 30px;
+    font-family: "Montserrat";
+    text-align: left;
+    color: #042A51;
+    overflow: hidden;
+}
+
+.cnpContainer {
+    margin-right: 15px;
+}
+
+.registerContainer {
+    margin-left: 15px;
+    text-align: center;
+}
+
+.containerHeading {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#cnpContainerImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.registerContainerImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.registerContainerText {
+    margin: 20px 0;
+}
+
+.signUp {
+    height: 32px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 11px;
+    color: #FFF;
+    border: none;
+    background-color: #429DED;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+.signUp:hover {
+        cursor: pointer;
+        background-color: #8DC63F;
+}
+
+/*  Main Slider Styles */
+.sliderContainer {
+    background-color: #E1E1E1;
+    width: 100%;
+    overflow: hidden;
+    height: 40vh;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#leftButton,
+#rightButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#leftButton {
+    left: 10px;
+}
+
+#rightButton {
+    right: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #042A51;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-header {
-    border: 4px solid blueviolet;
-    width: 100%;
-    height: 300px;
+.navFooter ul {
+    display: flex;
 }
 
-main {
-    border: 4px solid blueviolet;
-    width: 100%;
-    height: 500px;
+.navFooter ul a {
+    margin: 0 25px 0 0;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: #E1E1E1;
 }
 
-footer {
-    border: 4px solid blueviolet;
+.navFooter li a:hover {
+    cursor: pointer;
+    color: #8DC63F;
+}
+
+hr {
     width: 100%;
-    height: 300px;
+    height: 1px;
+    border: none;
+    background-color: #E1E1E1;
+}
+
+.footerDescription,
+.copyrights {
+    color: #E1E1E1;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footerDescription {
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.copyrights {
+    background-color: #000;
+    font-size: small;
+    width: 100%;
+    height: 30px;
 }
