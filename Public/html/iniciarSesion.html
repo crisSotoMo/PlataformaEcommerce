@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion - Logic Lab</title>
+
+    <link rel="stylesheet" href='/Public/estilos/reset.css'>
+    <link rel="stylesheet" href="/Public/estilos/iniciarSesion.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="logInAndSignInContainer">
+        <div class="logInAndSignInTitleContainer">
+            <ul class="logInAndSignInTitle" id="logInAndSignInTitle">
+                <li><a href="#login">INICIAR SESION</a></li>
+                <li><a href="#signup">REGISTRARSE</a></li>
+            </ul>
+
+            <div class="underline"></div>
+        </div>
+
+        <!-- Formulario Log in -->
+        <div class="logInAndSignInDetail" id="logInAndSignInDetail">
+            <form action="" class="formulario">
+                
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="usuario" name="usuario" placeholder="Usuario" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-lock"></i> <input type="text" id="contraseña" name="contraseña" placeholder="Contraseña" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="checkbox" id="logInCheckbox" class="logInCheckbox" name="logInCheckbox">
+
+                    <label class="checkbox" for="checkbox">Remember me</label>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="submit" id="logInButton" class="logInButton" name="logInButton" value="INICIAR SESION">
+                    <a class="forgot" href="#">Forgot your password?</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

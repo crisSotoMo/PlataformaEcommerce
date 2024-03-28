@@ -1,0 +1,211 @@
+/* Estilos generales */
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header styles */
+header {
+    border: 2px solid   green;
+    background-color: #FFF;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+   display: flex;
+   text-align: center;
+   align-items: center;
+}
+
+.logo h1 {
+    font-family: "Montserrat";
+    color: #042A51;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+nav {
+    margin: 50px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.navHeader ul a {
+    margin: 15px ;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    color: #042A51;
+}
+
+.navHeader li a:hover {
+    border-bottom-color: #8dc63f;
+    cursor: pointer;
+}
+
+/* Main styles*/
+main {
+    border: 2px solid   yellow;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+/* Form Styles */
+form {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+  
+hr {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+  
+/* Inputs Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+  
+/* Placeholder Styles */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ccc;
+}
+  
+::-moz-placeholder { /* Firefox 19+ */
+    color: #ccc;
+}
+  
+:-ms-input-placeholder { /* IE 10+ */
+    color: #ccc;
+}
+  
+:-moz-placeholder-shown { /* Firefox 19+ */
+    color: #ccc;
+}
+  
+/* Button Styles */
+button {
+    margin-top: 15px;
+    float: right;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Montserrat"
+}
+  
+/* Design Styles */
+.campo-imagen {
+    display: flex;
+    align-items: center;
+}
+  
+.campo-imagen input {
+    margin-right: 10px;
+}
+  
+.campo-imagen img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+  
+/* Media queries */
+@media (max-width: 500px) {
+    form {
+      width: 90%;
+    }
+}
+/* Footer Styles */
+footer {
+    border: 2px solid   red;
+    background-color: #042A51;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navFooter ul {
+    display: flex;
+    justify-content:first baseline;
+}
+
+.navFooter ul a {
+    margin: 15px ;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: #E1E1E1;
+}
+
+.navFooter li a:hover {
+    cursor: pointer;
+    color: #8dc63f;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #E1E1E1;
+}
+
+.footerDescription {
+    color: #E1E1E1;
+    font-family: "Montserrat";
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.copyrights {
+    background-color: #E1E1E1;
+    color: #042A51;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
