@@ -1,54 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+body {
+    font-family: "Montserrat";
+}
+
+/* Estilos del Header */
 header {
     background-color: #FFF;
     width: 100%;
     height: 100px;
-    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Estilos del Header */
 .logo {
-   display: flex;
-   text-align: center;
-   align-items: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .logo h1 {
-    font-family: "Montserrat";
+    font-weight: 600;
     color: #042A51;
     font-size: 30px;
-    font-weight: 600;
+    margin-top: 20px;
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
 }
+
 nav {
     margin: 50px;
 }
 
 nav ul {
     display: flex;
+    margin-top: 20px;
 }
 
 .navHeader ul a {
-    margin: 15px ;
-    font-family: "Montserrat";
     font-weight: 600;
+    margin: 15px;
     border-bottom: 2px solid transparent;
     color: #042A51;
+    text-decoration: none;
 }
 
 .navHeader li a:hover {
-    border-bottom-color: #8dc63f;
+    border-bottom-color: #8DC63F;
     cursor: pointer;
 }
 
+
 /* Footer Styles */
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: #042A51;
     width: 100%;
     height: 300px;
@@ -63,9 +77,8 @@ footer {
 }
 
 .navFooter ul a {
-    margin: 15px ;
-    font-family: "Montserrat";
     font-weight: 400;
+    margin: 15px ;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     color: #E1E1E1;
@@ -84,9 +97,8 @@ hr {
 }
 
 .footerDescription {
-    color: #E1E1E1;
-    font-family: "Montserrat";
     font-weight: 300;
+    color: #E1E1E1;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -101,4 +113,96 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* .catalogoCuerpo {
+    border: solid 2px black;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table {
+    justify-content: center;
+    padding: 80px;
+    align-items: center;
+
+} */
+
+.catalogoCuerpo {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom:50px;
+
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    text-indent: 6px;
+    padding: 20px;
+  }
+  
+  tfoot {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    margin-right: 8px;
+  }
+
+
+
+.product {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+        width: auto;
+      }
+
+    p {
+        flex-grow: 1;
+        text-align: center;
+      }
+}
+
+.inputButton{
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100px; /* Set height for demonstration */
+}
+
+.button {
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+}
+
+.primaryButton{
+    background-color: #043965;
+}
+
+.secondaryButton{
+    background-color: rgb(102, 102, 102);
 }

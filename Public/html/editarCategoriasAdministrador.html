@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Categorías</title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Categorías</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="/Estilos/reset.css">
-    <link rel="stylesheet" href="/Estilos/editarCategoriasAdministrador.css"
-    
-</head>
-<body>
+    <link rel="stylesheet" href="/Public/estilos/reset.css" />
+    <link
+      rel="stylesheet"
+      href="/Public/estilos/editarCategoriasAdministrador.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="/Imagenes/produMarketLogo.png" alt="logoCNP">
-            <h1>ProduMarket</h1>
-        </div>
-        <nav class="navHeader">
-            <ul>
-                <li><a>PRODUCTORES</a></li>
-                <li><a>CATÁLOGO</a></li>
-                <li><a>INGRESO</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="/Public/imagenes/produMarketLogo.png" alt="logoCNP" />
+        <h1>ProduMarket</h1>
+      </div>
+      <nav class="navHeader">
+        <ul>
+          <li><a>PRODUCTORES</a></li>
+          <li><a>CATÁLOGO</a></li>
+          <li><a>INGRESO</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="container">
-            <h1>CATEGORÍAS</h1>
-            <form action="/action_page.php">
-              <h2>Eliminar Categoría</h2>
-              <br>
-              <label for="categoria_eliminar"></label>
-              <select id="categoria_eliminar" name="categoria_eliminar">
-                <option value="">SELECCIONE LA CATEGORÍA A ELIMINAR</option>
-                <option value="1">Categoría 1</option>
-                <option value="2">Categoría 2</option>
-                <option value="3">Categoría 3</option>
-              </select>
-              <br>
-              <br>
-              <h2>Agregar Categoría</h2>
-              <br>
-              <label for="categoria_agregar"></label>
-              <input type="text" id="categoria_agregar" name="categoria_agregar" value="NOMBRE DE LA NUEVA CATEGORÍA">
-              <br>
-              <br>
-              <input type="submit" value="Guardar">
-            </form>
+      <div class="container">
+        <div class="containerTitle">
+          <h1>CATEGORÍAS</h1>
+          <hr />
+        </div>
+        <form>
+          <div class="formSection">
+            <div class="sectionTitle">
+              <i class="fa-solid fa-list"></i
+              ><label for="categoriaEliminar">Eliminar Categoría</label>
+            </div>
+            <select
+              class="sectionInput"
+              id="categoriaEliminar"
+              name="categoriaEliminar"
+            >
+              <option classvalue="">SELECCIONE LA CATEGORÍA A ELIMINAR</option>
+              <option value="1">Categoría 1</option>
+              <option value="2">Categoría 2</option>
+              <option value="3">Categoría 3</option>
+            </select>
           </div>
+          <div class="formSection">
+            <div class="sectionTitle">
+              <i class="fa-solid fa-plus"></i
+              ><label for="categoriaAgregar">Agregar Categoría</label>
+            </div>
+            <input
+              class="sectionInput"
+              type="text"
+              id="categoriaAgregar"
+              name="categoriaAgregar"
+              value="NOMBRE DE LA NUEVA CATEGORÍA"
+            />
+          </div>
+          <div class="inputButton">
+            <input type="submit" value="Guardar" class="primaryButton" />
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
-        <nav class="navFooter">
-            <ul>
-                <li><a href="#">PRODUCTORES</a></li>
-                <li><a href="#">CATÁLOGO</a></li>
-                <li><a href="#">INGRESO</a></li>
-            </ul>
-            <hr>
-        </nav>
-        <section class="footerDescription">
-            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
-        </section>
-        <section class="copyrights">
-            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
-        </section>
+      <nav class="navFooter">
+        <ul>
+          <li><a href="#">PRODUCTORES</a></li>
+          <li><a href="#">CATÁLOGO</a></li>
+          <li><a href="#">INGRESO</a></li>
+        </ul>
+        <hr />
+      </nav>
+      <section class="footerDescription">
+        <p>
+          Para más información, puede contactarnos al correo
+          info@produmarket.com.
+        </p>
+      </section>
+      <section class="copyrights">
+        <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
-

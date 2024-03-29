@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Catálogo</title>
-    <link rel = "stylesheet" href="/estilos/reset.css">
-    <link rel = "stylesheet" href="/estilos/inventarioVendedor.css">
+    <link rel = "stylesheet" href="/Public/estilos/reset.css">
+    <link rel = "stylesheet" href="/Public/estilos/inventarioVendedor.css">
 
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/imagenes/produMarketLogo.png" alt="logoCNP">
+            <img src="/Public/imagenes/produMarketLogo.png" alt="logoCNP">
             <h1>ProduMarket</h1>
         </div>
         <nav class="navHeader">
@@ -24,8 +24,49 @@
         </nav>
     </header>
     <main>
-        <div class="">
-
+    <div = class = "catalogoCuerpo">
+        <table>
+            <thead>
+              <tr>
+                <th>Nombre del Producto</th>
+                <th>Disponible</th>
+                <th>Precio</th>
+                <td> </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class = "product">
+                    <img src="/Public/imagenes/piña.jpg" alt="Imagen de una piña"> </img>
+                    <p>Ejemplo del titulo del producto con detalles.</p>
+                  </div>
+                </td>
+                <td>20</td>
+                <td>$2000</td>
+                <td>
+                  <button class = "button secondaryButton">Editar</button>
+                  <button class = "button secondaryButton">Eliminar Producto</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div class = "product">
+                  <img src="/Public/imagenes/piña.jpg" alt="Imagen de una piña"> </img>
+                  <p>Ejemplo del titulo del producto con detalles.</p>
+                </div>
+              </td>
+                <td>20</td>
+                <td>$2000</td>
+                <td>
+                  <button class = "button secondaryButton">Editar</button>
+                  <button class = "button secondaryButton">Eliminar Producto</button>
+                </td>
+              </tr>
+          </table>
+          <div class="inputButton">
+            <input type="submit" value="Agregar Producto" class="button primaryButton">
+          </div>
         </div>
     </main>
     <footer>
