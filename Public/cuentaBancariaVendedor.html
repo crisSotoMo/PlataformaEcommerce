@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Account Registration</title>
+<link rel="stylesheet" href="cuentabancovendedor.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+</head>
+<body>
+
+<div class="container">
+    <h2>REGISTRO CUENTA BANCARIA</h2>
+    <div id="current-account">
+        <span class="icon">🏦</span> <!-- Icon for current account -->
+        CUENTA DE BANCO ACTUAL: 1234567890
+    </div>
+    <div class="input-container">
+        <span class="icon">🏦</span> <!-- Icon for input -->
+        <input type="text" id="new-account" placeholder="INGRESE NUEVA CUENTA DE BANCO">
+    </div>
+    <button onclick="confirmAccount()">Editar</button>
+</div>
+
+<script>
+    function confirmAccount() {
+        var newAccount = document.getElementById("new-account").value;
+        // Here you can perform the necessary action with the new account,
+        // such as sending it to a server or updating it in a database
+        console.log("Registered new bank account:", newAccount);
+    }
+</script>
+
+</body>
+</html>
