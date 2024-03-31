@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Editar Categorías</title>
+    <title>Eliminar Categoría</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="/Public/estilos/reset.css" />
     <link
       rel="stylesheet"
-      href="/Public/estilos/editarCategoriasAdministrador.css"
+      href="/Public/estilos/eliminarCategoriasAdministrador.css"
     />
-
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       rel="stylesheet"
@@ -33,14 +32,14 @@
     <main>
       <div class="container">
         <div class="containerTitle">
-          <h1>CATEGORÍAS</h1>
-          <hr />
+          <h1> ELIMINAR CATEGORÍAS</h1>
+          <hr/>
         </div>
-        <form>
+        <form class="containerBody">
           <div class="formSection">
             <div class="sectionTitle">
-              <i class="fa-solid fa-list"></i
-              ><label for="categoriaEliminar">Eliminar Categoría</label>
+              <i class="fa-solid fa-list"></i>
+              <label for="categoriaEliminar">Eliminar Categoría</label>
             </div>
             <select
               class="sectionInput"
@@ -53,21 +52,8 @@
               <option value="3">Categoría 3</option>
             </select>
           </div>
-          <div class="formSection">
-            <div class="sectionTitle">
-              <i class="fa-solid fa-plus"></i
-              ><label for="categoriaAgregar">Agregar Categoría</label>
-            </div>
-            <input
-              class="sectionInput"
-              type="text"
-              id="categoriaAgregar"
-              name="categoriaAgregar"
-              value="NOMBRE DE LA NUEVA CATEGORÍA"
-            />
-          </div>
           <div class="inputButton">
-            <input type="submit" value="Guardar" class="primaryButton" />
+            <input type="submit" class="primaryButton" onclick="eliminarCategoria()"/>
           </div>
         </form>
       </div>
@@ -91,5 +77,11 @@
         <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
       </section>
     </footer>
+
+    <!--Scripts-->
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Controller-->
+    <script src="/Public/scripts/eliminarCategoriasAdministrador.js"></script>
   </body>
 </html>
