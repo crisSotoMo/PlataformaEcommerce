@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #E1E1E1;
+    margin: 0 4px;
+    font-family: "Montserrat";
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: #1b6aa1;
+    color: #E1E1E1;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #E1E1E1;
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: #E1E1E1;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #E1E1E1;
+}

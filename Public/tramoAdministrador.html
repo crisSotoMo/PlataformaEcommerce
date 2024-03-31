@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramo - ProduMarket</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href='/Public/estilos/reset.css'>
+    <link rel="stylesheet" href="/public/estilos/headerFooter.css">
+    <link rel="stylesheet" href='/Public/estilos/tramo.css'>
+    <link rel="stylesheet" href="/public/estilos/paginacion.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src='/Public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+                <i class="fas fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="adviceContainer">
+
+            <article class="ratingContainer">
+                <h2 class="containerHeading">Piñera Orgánica Hnos.Huertas</h2>
+                <section>
+                    <figure id="vendorInfo">
+                        <img src='/public/imagenes/piñaEjemplo.png' alt="Piñera Hnos. Huertas">
+                        <figcaption>
+                            <p>Siquirres, Limón</p>
+                            <p>Calificación: <span class="stars" data-rating="0">★</span> <span
+                                    class="rating-value">0</span></p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <p>
+                        Nuestra piñera nace como un pequeño emprendimiento familiar, fundado en el año 2002 por nuestro
+                        abuelo Marco Antonio Huertas en la provincia de Limón.
+                    </p>
+                    <br>
+                    <p>
+                        Entendemos la problemática actual por el uso de agroquímicos de las piñeras, que contaminan las
+                        nacientes de agua y pueden causar graves problemas a la salud. Por lo tanto, tenemos a su
+                        disposición productos orgánicos a base de nuestra piña de alta calidad.
+                    </p>
+                </section>
+            </article>
+
+            <article class="catalogContainer">
+                <h2 class="containerHeading">Nuestros productos</h2>
+                <section class="cardsContainer">
+                    <div class="card">
+                        <img src='/public/imagenes/piña.jpg' alt="Producto">
+                        <div class="details">
+                            <div class="priceName">
+                                <h3>Piña dorada</h3>
+                                <p class="price">₡2000</p>
+                            </div>
+                            <h4><a href="#">Hnos.Huertas</a></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src='/public/imagenes/piña.jpg' alt="Producto">
+                        <div class="details">
+                            <div class="priceName">
+                                <h3>Piña dorada</h3>
+                                <p class="price">₡2000</p>
+                            </div>
+                            <h4><a href="#">Hnos.Huertas</a></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src='/public/imagenes/piña.jpg' alt="Producto">
+                        <div class="details">
+                            <div class="priceName">
+                                <h3>Piña dorada</h3>
+                                <p class="price">₡2000</p>
+                            </div>
+                            <h4><a href="#">Hnos.Huertas</a></h4>
+                        </div>
+                    </div>
+                </section>
+                <section class="paginationContainer">
+                    <div class="pagination">
+                        <a href="#" class="prev">&laquo; Anterior</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="next">Siguiente &raquo;</a>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src='/Public/scripts/rating.js'></script>
+</body>
+
+</html>

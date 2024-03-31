@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - ProduMarket</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href='/Public/estilos/reset.css'>
+    <link rel="stylesheet" href="/public/estilos/headerFooter.css">
+    <link rel="stylesheet" href='/Public/estilos/reportesAdmin.css'>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src='/Public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+                <i class="fas fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="containerHeading">Número de comercios activos</h2>
+            <button>Generar</button>
+            <div class="result" id="resultado1">
+                <label for="resultado1">Resultado:</label>
+                <input type="text" id="resultado1" readonly>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="containerHeading">Ventas totales de todos los comercios</h2>
+            <div class="filters">
+                <label for="filtro2-start">Fecha de inicio:</label>
+                <input type="date" id="filtro2-start">
+                <label for="filtro2-end">Fecha de fin:</label>
+                <input type="date" id="filtro2-end">
+                <button>Generar</button>
+            </div>
+            <div class="result" id="resultado2">
+                <label for="resultado2">Resultado:</label>
+                <input type="text" id="resultado2" readonly>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="containerHeading">Ventas por comercio por período</h2>
+            <div class="filters">
+                <label for="filtro3-start">Fecha de inicio:</label>
+                <input type="date" id="filtro3-start">
+                <label for="filtro3-end">Fecha de fin:</label>
+                <input type="date" id="filtro3-end">
+                <label for="filtro3-tramo">Tramo:</label>
+                <select id="filtro3-tramo">
+                    <option selected value="tramo">Tramo</option>
+                    <option value="hnos_huertas">Hnos. Huertas</option>
+                    <option value="fresas_quiros">Fresas Quirós</option>
+                    <option value="coto_sa">Coto S.A</option>
+                </select>
+                <button>Generar</button>
+            </div>
+            <div class="result" id="resultado3">
+                <label for="resultado3">Resultado:</label>
+                <input type="text" id="resultado3" readonly>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="containerHeading">Ventas por producto</h2>
+            <div class="filters">
+                <label for="filtro4-producto">Producto:</label>
+                <select id="filtro4-producto">
+                    <option selected value="producto">Producto</option>
+                    <option value="piña">Piña</option>
+                    <option value="sandia">Sandía</option>
+                    <option value="fresa">Fresa</option>
+                </select>
+                <button>Generar</button>
+            </div>
+            <div class="result" id="resultado4">
+                <label for="resultado4">Resultado:</label>
+                <input type="text" id="resultado4" readonly>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src='/Public/scripts/rating.js'></script>
+</body>
+
+</html>

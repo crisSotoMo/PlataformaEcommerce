@@ -1,0 +1,85 @@
+
+main {
+    background-color: #E1E1E1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Montserrat";
+}
+
+.card {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.filters {
+    margin-bottom: 10px;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 150px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 12px;
+    color: #FFF;
+    border: none;
+    background-color: #1b6aa1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #525146;
+    color: #FFF;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin: 10px 0;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.containerHeading {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 20px 0;
+    text-align: center;
+}
