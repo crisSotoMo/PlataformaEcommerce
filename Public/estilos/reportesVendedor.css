@@ -1,37 +1,38 @@
-/* Estilos Globales */
-body {
+main {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-    margin: 10px;
+.tableContainer {
+    width: 95%;
     font-family: 'Montserrat';
+    margin-top: 30px;
 }
 
-.styled-table {
+.styledTable {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-.styled-table th,
-.styled-table td {
+.styledTable th,
+.styledTable td {
     border: 1px solid #dddddd;
     padding: 8px;
     text-align: center;
 }
 
-.styled-table th {
+.styledTable th {
     background-color: #f2f2f2;
 }
 
-.styled-table tbody tr:nth-child(even) {
+.styledTable tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.styled-table tbody tr:hover {
+.styledTable tbody tr:hover {
     background-color: #e2f0ff;
 }

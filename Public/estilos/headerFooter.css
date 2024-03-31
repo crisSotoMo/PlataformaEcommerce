@@ -52,8 +52,8 @@ nav ul {
 
 /* Footer Styles */
 footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     background-color: #042A51;
     width: 100%;
     height: 300px;
