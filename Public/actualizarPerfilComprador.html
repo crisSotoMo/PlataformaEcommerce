@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil Comprador</title>
     <!--Estilos-->
-    <link rel="stylesheet" href="/Public/estilos/reset.css">
-    <link rel="stylesheet" href="/Public/estilos/actualizarPerfilComprador.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/actualizarPerfilComprador.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="/Public/imagen/produMarketLogo (1).png" alt="logoCNP">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
             <h1>ProduMarket</h1>
         </div>
         <nav class="navHeader">
             <ul>
-                <li><a>INICIO</a></li>
-                <li><a>MIS PEDIDOS</a></li>
-                <li><a>CATÁLOGO</a></li>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">MIS PEDIDOS</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-bars"></i>
             </ul>
         </nav>
     </header>
@@ -46,7 +54,7 @@
             <div class="buttons">
                 <button id="cancel">Cancelar</button>
                 <button id="update">Actualizar perfil</button>
-              </div>
+            </div>
         </form>
     </main>
 
@@ -71,6 +79,7 @@
     <!--Sweet Alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Controller-->
-    <script src="/Public/scripts/actualizarPerfilComprador.js"></script>
+    <script src="/public/scripts/actualizarPerfilComprador.js"></script>
 </body>
+
 </html>

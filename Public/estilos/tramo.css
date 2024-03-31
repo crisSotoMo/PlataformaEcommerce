@@ -1,3 +1,9 @@
+/* Estilos Globales */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Estilos generales */
 main {
     width: 100%;

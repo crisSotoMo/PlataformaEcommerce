@@ -1,3 +1,9 @@
+/* Estilos Globales */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .catalogFilters {
     width: 100%;
     height: 200px;

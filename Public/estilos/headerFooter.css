@@ -1,9 +1,3 @@
-/* Estilos Globales */
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Estilos del Header */
 header {
     background-color: #FFF;
@@ -58,6 +52,8 @@ nav ul {
 
 /* Footer Styles */
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: #042A51;
     width: 100%;
     height: 300px;
@@ -88,7 +84,7 @@ i {
     color: #8DC63F;
 }
 
-hr {
+.navFooter hr {
     width: 100%;
     height: 1px;
     border: none;

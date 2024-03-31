@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agregar Categorías</title>
-    <!-- Estilos -->
-    <link rel="stylesheet" href="/Public/estilos/reset.css" />
-    <link
-      rel="stylesheet"
-      href="/Public/estilos/agregarCategoriasAdministrador.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="/Public/imagenes/produMarketLogo.png" alt="logoCNP" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agregar Categorías</title>
+  <!--Estilos-->
+  <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+  <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="../public/estilos/agregarCategoriasAdministrador.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Íconos -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
         <h1>ProduMarket</h1>
-      </div>
-      <nav class="navHeader">
+    </div>
+    <nav class="navHeader">
         <ul>
-          <li><a>PRODUCTORES</a></li>
-          <li><a>CATÁLOGO</a></li>
-          <li><a>INGRESO</a></li>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">SOLICITUDES</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="#">REPORTES</a></li>
+            <i class="fas fa-bars"></i>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="containerTitle">
-          <h1>AGREGAR CATEGORÍAS</h1>
-          <hr />
-        </div>
-        <form class="containerBody">
-          <!-- <div class="formSection">
+    </nav>
+</header>
+  <main>
+    <div class="container">
+      <div class="containerTitle">
+        <h1>AGREGAR CATEGORÍAS</h1>
+        <hr />
+      </div>
+      <form class="containerBody">
+        <!-- <div class="formSection">
             <div class="sectionTitle">
               <i class="fa-solid fa-list"></i>
               <label for="categoriaEliminar">Eliminar Categoría</label>
@@ -52,53 +58,44 @@
               <option value="3">Categoría 3</option>
             </select>
           </div> -->
-          <div class="formSection">
-            <div class="sectionTitle">
-              <i class="fa-solid fa-plus"></i>
-              <label for="categoriaAgregar">Agregar Categoría</label>
-            </div>
-            <input
-              class="sectionInput"
-              type="text"
-              id="categoriaAgregar"
-              name="categoriaAgregar"
-              placeholder="NOMBRE DE LA NUEVA CATEGORÍA"
-            />
+        <div class="formSection">
+          <div class="sectionTitle">
+            <i class="fa-solid fa-plus"></i>
+            <label for="categoriaAgregar">Agregar Categoría</label>
           </div>
-          <div class="inputButton">
-            <input
-              type="submit"
-              class="primaryButton"
-              onclick="agregarCategoria()"
-            />
-          </div>
-        </form>
-      </div>
-    </main>
-    <footer>
-      <nav class="navFooter">
+          <input class="sectionInput" type="text" id="categoriaAgregar" name="categoriaAgregar"
+            placeholder="NOMBRE DE LA NUEVA CATEGORÍA" />
+        </div>
+        <div class="inputButton">
+          <input type="submit" class="primaryButton" onclick="agregarCategoria()" />
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <nav class="navFooter">
         <ul>
-          <li><a href="#">PRODUCTORES</a></li>
-          <li><a href="#">CATÁLOGO</a></li>
-          <li><a href="#">INGRESO</a></li>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">SOLICITUDES</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="#">REPORTES</a></li>
+            <li><a href="#">ADMINISTRAR CATEGORÍAS</a></li>
         </ul>
-        <hr />
-      </nav>
-      <section class="footerDescription">
-        <p>
-          Para más información, puede contactarnos al correo
-          info@produmarket.com.
-        </p>
-      </section>
-      <section class="copyrights">
+        <hr>
+    </nav>
+    <section class="footerDescription">
+        <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+    </section>
+    <section class="copyrights">
         <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
-      </section>
-    </footer>
+    </section>
+</footer>
 
-    <!--Scripts-->
-    <!--Sweet Alert-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--Controller-->
-    <script src="/Public/scripts/agregarCategoriasAdministrador.js"></script>
-  </body>
+  <!--Scripts-->
+  <!--Sweet Alert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Controller-->
+  <script src="/public/scripts/agregarCategoriasAdministrador.js"></script>
+</body>
+
 </html>

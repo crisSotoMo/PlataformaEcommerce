@@ -1,3 +1,9 @@
+/* Estilos Globales */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto;

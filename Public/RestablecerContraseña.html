@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restablecer Contraseña</title>
-    <link rel="stylesheet" href="./Estilos/reset.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logoCNP"></div>
-      <nav class="nav"></nav>
-      <div class="user"></div>
-      <div class="settings"></div>
-    </header>
-    <main>
-      <form action="">
-        <label for="currentPassword">Contraseña actual/temporal</label>
-        <input type="password" id="currentPassword" />
-        <label for="newPassword">Nueva contraseña </label>
-        <input type="password" id="newPassword" />
-        <label for="confirmNewPassword">Confirmar la nueva contraseña</label>
-        <input type="password" id="confirmNewPassword" />
-      </form>
-      <button>Guardar</button>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restablecer Contraseña</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Íconos -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+        <h1>ProduMarket</h1>
+    </div>
+    <nav class="navHeader">
+        <ul>
+            <li><a href="#">SOBRE NOSOTROS</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="#">INGRESE</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <form action="">
+      <label for="currentPassword">Contraseña actual/temporal</label>
+      <input type="password" id="currentPassword" />
+      <label for="newPassword">Nueva contraseña </label>
+      <input type="password" id="newPassword" />
+      <label for="confirmNewPassword">Confirmar la nueva contraseña</label>
+      <input type="password" id="confirmNewPassword" />
+    </form>
+    <button>Guardar</button>
+  </main>
+  <footer>
+    <nav class="navFooter">
+        <ul>
+            <li><a href="#">SOBRE NOSOTROS</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="#">INGRESE</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <section class="footerDescription">
+        <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+    </section>
+    <section class="copyrights">
+        <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+    </section>
+</footer>
+</body>
+
 </html>

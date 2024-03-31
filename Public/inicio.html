@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - ProduMarket</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="./estilos/reset.css">
-    <link rel="stylesheet" href="./estilos/headerFooter.css">
-    <link rel="stylesheet" href="./estilos/inicio.css">
-     <!-- Fuentes -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/inicio.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
     <header>
         <div class="logo">
-            <img src='/Public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
             <h1>ProduMarket</h1>
         </div>
         <nav class="navHeader">
@@ -35,9 +37,9 @@
     <main>
         <section class="sliderContainer">
             <div class="slide">
-                <img src='/Public/imagenes/feria.jpg' alt="Imagen decorativa de tramo">
-                <img src='/Public/imagenes/campo.jpg' alt="Imagen decorativa del campo">
-                <img src='/Public/imagenes/vegetales.jpg' alt="Imagen decorativa de vegetales">
+                <img src='../public/imagenes/feria.jpg' alt="Imagen decorativa de tramo">
+                <img src='../public/imagenes/campo.jpg' alt="Imagen decorativa del campo">
+                <img src='../public/imagenes/vegetales.jpg' alt="Imagen decorativa de vegetales">
             </div>
             <button id="leftButton">ᐊ</button>
             <button id="rightButton">ᐅ</button>
@@ -52,19 +54,21 @@
                     Además,
                     pone a disposición de nuestros clientes, productos frescos y de la más alta calidad.
                 </p>
-                <img id="cnpContainerImg" src='/Public/imagenes/info.jpg' alt="Imagen decorativa de cosecha">
+                <img id="cnpContainerImg" src='../public/imagenes/info.jpg' alt="Imagen decorativa de cosecha">
             </article>
             <article class="registerContainer">
                 <h2 class="containerHeading">Regístrate</h2>
                 <p class="registerContainerText">
                     ¿Desea comercializar sus productos en línea?.
                 </p>
-                <img class="registerContainerImg" src='/Public/imagenes/hombre.jpg' alt="Imagen decorativa de agricultor">
+                <img class="registerContainerImg" src='../public/imagenes/hombre.jpg'
+                    alt="Imagen decorativa de agricultor">
                 <button class="signUp" type="submit">Ingrese</button>
                 <p class="registerContainerText">
                     ¿Desea comprar productos frescos en línea?.
                 </p>
-                <img class="registerContainerImg" src='/Public/imagenes/agricultor.jpg' alt="Imagen decorativa de producto">
+                <img class="registerContainerImg" src='../public/imagenes/agricultor.jpg'
+                    alt="Imagen decorativa de producto">
                 <button class="signUp" type="submit">Ingrese</button>
             </article>
         </section>
@@ -88,7 +92,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src='/Public/scripts/slider.js'></script>
+    <script src='/public/scripts/slider.js'></script>
 
 </body>
+
 </html>

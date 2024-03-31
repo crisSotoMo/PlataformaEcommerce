@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Account Registration</title>
     <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href='../public/estilos/reset.css'>
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
     <link rel="stylesheet" type="text/css" href="../public/estilos/cuentabancovendedor.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
@@ -20,7 +20,21 @@
 </head>
 
 <body>
-
+    <header>
+        <div class="logo">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+                <i class="fas fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <h2>REGISTRO CUENTA BANCARIA</h2>
         <div id="current-account">
@@ -33,6 +47,24 @@
         </div>
         <button onclick="confirmAccount()">Editar</button>
     </div>
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SOLICITUDES</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">REPORTES</a></li>
+                <li><a href="#">ADMINISTRAR CATEGORÍAS</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
 
     <script>
         function confirmAccount() {
