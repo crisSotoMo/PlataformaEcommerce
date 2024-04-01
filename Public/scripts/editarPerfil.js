@@ -1,5 +1,13 @@
 "Use strict";
 
+/*DOM Reference*/
+const profileName = document.querySelector("#name");
+const profileLastName = document.querySelector("#lastName");
+const profileEmail = document.querySelector("#email");
+const profilePhone = document.querySelector("#phone");
+const cancelBtn = document.querySelector("#cancel");
+const updateBtn = document.querySelector("#update");
+
 /*Validate Empty Fields*/
 function validateEmptyFields() {
     let error = false;
@@ -18,7 +26,7 @@ function validateEmptyFields() {
 /*Validate Profile Name*/
 function validateName() {
     let error = false;
-    let updateName = document.querySelector("#name").value;
+    let updateName = profileName.value;
     let expression = /^[a-zA-ZáéíóúñÑü\s]+$/;
     if (expression.test(updateName) == false) {
         profileName.classList.add("error");
@@ -32,7 +40,7 @@ function validateName() {
 /*Validate Profile Last Name*/
 function validateLastName() {
     let error = false;
-    let updateLastName = document.querySelector("#lastName").value;
+    let updateLastName = profileLastName.value;
     let expression = /^[a-zA-ZáéíóúñÑü\s]+$/;
     if (expression.test(updateLastName) == false) {
         profileLastName.classList.add("error");
@@ -46,7 +54,7 @@ function validateLastName() {
 /*Validate Profile Email*/
 function validateEmail() {
     let error = false;
-    let updateEmail = document.querySelector("#email").value;
+    let updateEmail = profileEmail.value;
     let expression = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (expression.test(updateEmail) == false) {
         profileEmail.classList.add("error");
@@ -60,7 +68,7 @@ function validateEmail() {
 /*Validate Profile Phone*/
 function validatePhone() {
     let error = false;
-    let updatephone = document.querySelector("#phone").value;
+    let updatephone = profilePhone.value;
     let expression = /^[0-9]{4}-[0-9]{4}$/;
     if (expression.test(updatephone) == false) {
         profilePhone.classList.add("error");
@@ -73,10 +81,10 @@ function validatePhone() {
 
 /*Clean Form Fields*/
 function cleanFields() {
-    document.querySelector("#name").value = "";
-    document.querySelector("#lastName").value = "";
-    document.querySelector("#email").value = "";
-    document.querySelector("#phone").value = "";
+    profileName.value = "";
+    profileLastName.value = "";
+    profileEmail.value = "";
+    profilePhone.value = "";
 }
 
 /*Validate Form*/
@@ -127,8 +135,10 @@ function principalForm() {
             text: "Su perfil ha sido actualizado",
             icon: "success",
             confirmButtonText: "OK"
-        }).then(function () {
-            cleanFields();
         });
     }
+    cleanFields();
 }
+
+/*Action Button*/
+updateBtn.addEventListener("click", principalForm)
