@@ -1,37 +1,45 @@
+
+footer {
+  position: fixed;
+  bottom: 0;
+  bottom: 0
+}
+
 body {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    background-color: #fff; /* Set background color */
+  font-family: "Montserrat", sans-serif; /* Apply Montserrat font */
+  background-color: #fff; /* Set background color */
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #E1E1E1; /* Set table background color */
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #e1e1e1; /* Set table background color */
 }
 
 th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
-.approve-btn, .decline-btn {
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+.approve-btn,
+.decline-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .approve-btn {
-    background-color: #525146;
-    color: white;
+  background-color: #525146;
+  color: white;
 }
 
 .decline-btn {
-    background-color: #525146;
-    color: white;
+  background-color: #525146;
+  color: white;
 }

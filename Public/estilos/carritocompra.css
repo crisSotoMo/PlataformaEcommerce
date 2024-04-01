@@ -1,4 +1,11 @@
 
+footer {
+    position: fixed;
+    bottom: 0;
+    bottom: 0
+  }  
+
+
 body {
     font-family: "Montserrat";
     margin: 0;
