@@ -18,7 +18,7 @@ main {
     border-radius: 5px;
 }
 
-.cnpContainer,
+#cnpContainer,
 .registerContainer {
     background-color: #FFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ main {
     overflow: hidden;
 }
 
-.cnpContainer {
+#cnpContainer {
     margin-right: 15px;
 }
 
