@@ -7,10 +7,10 @@ body {
 
 .container {
     position: relative;
-    top: 60px;
+    top: 100px;
     width: 100%;
     max-width: 400px;
-    min-height: 370px;
+    min-height: 150px;
     margin: 0 auto;
     background: #fff;
     padding: 50px 50px;
@@ -20,14 +20,13 @@ body {
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     font-weight: 600;
-    color: #042A51; 
+    color: #042A51;
 }
 
-
 #current-account {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .input-container {
@@ -51,12 +50,12 @@ h2 {
 }
 
 .inputsSections input {
-    width: calc(80% - 40px); 
+    width: calc(100% - 25px); 
     padding: 10px 10px 10px 30px; 
     border: 1px solid #ccc;
     border-radius: 3px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    box-sizing: content-box;
+    margin-bottom: auto;
     text-align: center;
 }
 
@@ -75,7 +74,7 @@ button {
     background-color: #043965;
     margin-right: 25px;
     color: #fff;
-    float: right;
+    float: right; 
 }
 
 button:hover {

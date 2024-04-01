@@ -8,7 +8,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
-    <link rel="stylesheet" type="text/css" href="../public/estilos/cuentabancovendedor.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/cuentabanco.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,14 +38,14 @@
     <div class="container">
         <h2>REGISTRO CUENTA BANCARIA</h2>
         <div id="current-account">
-            <span class="icon">🏦</span> <!-- Icon for current account -->
-            CUENTA DE BANCO ACTUAL: 1234567890
+            <i class="fa fa-credit-card"></i>
+            CUENTA ACTUAL: CR** **** **** **** **40 66
         </div>
         <div class="input-container">
-            <span class="icon">🏦</span> <!-- Icon for input -->
-            <input type="text" id="new-account" placeholder="INGRESE NUEVA CUENTA DE BANCO">
+            <i class="fa fa-credit-card"></i>
+            <input type="text" id="nuevaCuenta" placeholder="INGRESE NUEVA CUENTA DE BANCO">
         </div>
-        <button onclick="confirmAccount()">Editar</button>
+        <button onclick="agregarCuenta()">Editar</button>
     </div>
     <footer>
         <nav class="navFooter">
@@ -66,14 +66,9 @@
         </section>
     </footer>
 
-    <script>
-        function confirmAccount() {
-            var newAccount = document.getElementById("new-account").value;
-            // Here you can perform the necessary action with the new account,
-            // such as sending it to a server or updating it in a database
-            console.log("Registered new bank account:", newAccount);
-        }
-    </script>
+    <!--Script-->
+
+    <script src="../public/scripts/cuentaBanco.js" defer></script>
 
 </body>
 

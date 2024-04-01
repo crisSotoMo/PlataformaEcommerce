@@ -1,4 +1,4 @@
-/* CSS styles for the shopping cart */
+
 body {
     font-family: "Montserrat";
     margin: 0;
@@ -15,7 +15,9 @@ body {
 }
 h1 {
     text-align: left;
-    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #042A51;
 }
 .cart {
     width: 100%;

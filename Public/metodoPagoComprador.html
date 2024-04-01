@@ -8,7 +8,7 @@
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
-    <link rel="stylesheet" type="text/css" href="../public/estilos/cuentabancovendedor.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/metodopagocomprador.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,17 +35,27 @@
             </ul>
         </nav>
     </header>
+
     <div class="container">
-        <h2>REGISTRO CUENTA BANCARIA</h2>
-        <div id="current-account">
-            <span class="icon">🏦</span> <!-- Icon for current account -->
-            CUENTA DE BANCO ACTUAL: 1234567890
+        <h2>REGISTRO TARJETA DE DEBITO/CREDITO</h2>
+        <div class="inputsSections">
+            <i class="fas fa-bars"></i>
+            <input type="text" id="nombre-tarjeta" placeholder="NOMBRE EN LA TARJETA">
         </div>
-        <div class="input-container">
-            <span class="icon">🏦</span> <!-- Icon for input -->
-            <input type="text" id="new-account" placeholder="INGRESE NUEVA CUENTA DE BANCO">
+        <div class="inputsSections">
+            <i class="fa fa-credit-card"></i>
+            <input type="text" id="numero-tarjeta" placeholder="NUMERO DE LA TARJETA">
         </div>
-        <button onclick="confirmAccount()">Editar</button>
+        <div class="inputsSections">
+            <i class="fa fa-calendar"></i>
+            <input type="text" id="fecha-vencimiento" placeholder="FECHA DE VENCIMIENTO">
+        </div>
+        <div class="inputsSections">
+            <i class="fas fa-lock"></i>
+            <input type="text" id="codigo-seguridad" placeholder="CODIGO DE SEGURIDAD(CVV)">
+        </div>
+        
+        <button onclick="agregarTarjeta()">AGREGAR</button>
     </div>
     
     <footer>
@@ -65,14 +75,9 @@
         </section>
     </footer>
 
-    <script>
-        function confirmAccount() {
-            var newAccount = document.getElementById("new-account").value;
-            // Here you can perform the necessary action with the new account,
-            // such as sending it to a server or updating it in a database
-            console.log("Registered new bank account:", newAccount);
-        }
-    </script>
+    <!--Script-->
+
+    <script src="../public/scripts/metodoPagoComprador.js" defer></script>
 
 </body>
 
