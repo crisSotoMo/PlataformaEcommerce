@@ -63,19 +63,19 @@ body {
 }
 
 .primaryButton {
-  line-height: 30px;
-  width: 150px;
-  font-family: Montserrat;
-  font-size: 18px;
-  cursor: pointer;
-  border: none;
-  padding: 8px 30px;
-  border-radius: 15px;
-  background-color: #043965;
-  color: #fff;
-}
+    line-height: 30px;
+    width: 150px;
+    font-family: Montserrat;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 15px;
+    background-color: #043965;
+    color: #fff;
+  }
 
-.inputButton {
-  margin-top: 20px;
-  align-self: center; /* Mover el botón al final del contenedorBody */
-}
+  .inputButton {
+    margin-top: 20px;
+    align-self: center; /* Mover el botón al final del contenedorBody */
+  }

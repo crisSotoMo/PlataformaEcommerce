@@ -1,11 +1,5 @@
 "Use strict";
 
-/*DOM Reference*/
-const passwordActTemp = document.querySelector("#currentPassword");
-const newPassword = document.querySelector("#newPassword");
-const confirmPassword = document.querySelector("#confirmNewPassword");
-const saveBtn = document.querySelector("#saveButton");
-
 /*Validate Empty Fields*/
 function validateEmptyFields() {
   let error = false;
@@ -67,9 +61,9 @@ function validateConfirmPassword() {
 
 /*Clean Form Fields*/
 function cleanFields() {
-  passwordActTemp.value = "";
-  newPassword.value = "";
-  confirmPassword.value = "";
+  document.querySelector("#currentPassword").value = "";
+  document.querySelector("#newPassword").value = "";
+  document.querySelector("#confirmNewPassword").value = "";
 }
 
 /*Validate Form*/
@@ -112,11 +106,8 @@ function principalForm() {
       text: "La contraseña ha sido actualizada",
       icon: "success",
       confirmButtonText: "OK",
-    }).then(function() {
-        cleanFields();
-      });
+    }).then(function () {
+      cleanFields();
+    });
   }
 }
-
-/*Action Button*/
-saveBtn.addEventListener("click", principalForm);
