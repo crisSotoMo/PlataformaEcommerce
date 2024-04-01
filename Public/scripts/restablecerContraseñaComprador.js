@@ -9,7 +9,7 @@ const saveBtn = document.querySelector("#saveButton");
 /*Validate Empty Fields*/
 function validateEmptyFields() {
     let error = false;
-    let requiredFields = document.querySelectorAll("#restorePassword [required]");
+    let requiredFields = document.querySelectorAll("input[required]");
     for (let i = 0; i < requiredFields.length; i++) {
         if (requiredFields[i].value == "") {
             requiredFields[i].classList.add("error");
