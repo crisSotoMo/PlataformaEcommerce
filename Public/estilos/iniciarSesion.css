@@ -6,7 +6,7 @@
 body {
     background: linear-gradient(to bottom, #042A51, #04497b);
     height: 100vh;
-    font-family: Montserrat SemiBold 600;
+    font-family: "Montserrat";
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -52,8 +52,8 @@ ul {
 
             a {
                 color: #404040;
-                font-weight: 800;
-                font-family: Montserrat Bold 700;
+                font-weight: 00;
+                font-family: "Montserrat";
             }
         }
 
@@ -109,7 +109,8 @@ ul {
 
 .input {
     width: 300px;
-    font-family: Montserrat SemiBold 600;
+    font-family: "Montserrat";
+    font-weight: 300;
     font-size: 20px;
 }
 
