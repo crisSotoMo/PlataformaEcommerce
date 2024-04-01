@@ -1,124 +1,17 @@
-body{
-    font-family: Montserrat Thin 100;
-}
-
-/* Estilos del Header */
-
-header {
-    background-color: #FFF;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.logo h1 {
-    font-family: "Montserrat";
-    color: #042A51;
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.logo img {
-    width: 80px;
-    height: 80px;
-}
-
-nav {
-    margin: 50px;
-}
-
-nav ul {
-    display: flex;
-    margin-top: 20px;
-}
-
-.navHeader ul a {
-    margin: 15px;
-    font-family: "Montserrat";
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    color: #042A51;
-    text-decoration: none;
-}
-
-.navHeader li a:hover {
-    border-bottom-color: #8DC63F;
-    cursor: pointer;
-}
-
-/* Estilos del Footer */
-
-footer {
-    background-color: #042A51;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navFooter ul {
-    display: flex;
-}
-
-.navFooter ul a {
-    margin: 0 25px 0 0;
-    font-family: "Montserrat";
-    font-weight: 400;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    color: #E1E1E1;
-}
-
-.navFooter li a:hover {
-    cursor: pointer;
-    color: #8DC63F;
-}
-
-hr {
-    width: 100%;
-    height: 1px;
-    border: none;
+main{
+    font-family: 'Montserrat';
+    height: 800px;
     background-color: #E1E1E1;
-}
-
-.footerDescription,
-.copyrights {
-    color: #E1E1E1;
-    font-family: "Montserrat";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.footerDescription {
-    font-weight: 300;
-    margin-bottom: 50px;
-}
-
-.copyrights {
-    background-color: #000;
-    font-size: small;
-    width: 100%;
-    height: 30px;
+    padding: 5px;
 }
 
 /* Seccion de Catalogo */
 
 h2 {
 
-    font-family: Montserrat SemiBold 600;
+    font-family: 'Montserrat';
     font-size: 36px;
+    font-weight: 600;
     margin: 25px;
 }
 
@@ -132,7 +25,8 @@ h2 {
     border-radius: 10px;
     width: 250px;
     padding: 25px;
-    background-color: #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 25px;
 }
 
@@ -185,9 +79,7 @@ h2 {
 }
 
 .logoTramo{
-
     width: 50px;
-
 }
 
 .contenedorTramo{
@@ -195,9 +87,11 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-left: -15px;
+}
 
-
+.contenedorTramo a {
+    text-decoration: none;
+    color: #000;
 }
 
 .botonIrCatalogo{
@@ -216,10 +110,8 @@ h2 {
 
 }
 
-.botonIrCatalogo:hover{
-
-    color: #279C44;
-
+.botonIrCatalogo:hover, .verCatalogoBoton:hover {
+   background-color: #525146;
 }
 
 .verCatalogoContenedor{
@@ -240,7 +132,6 @@ h2 {
     width: 100px;
     text-align: center;
     padding: 20px;
-
 }
 
 /* Seccion de Mis Pedidos */
@@ -265,7 +156,7 @@ h2 {
 }
 
 .tablasCompradorPaginaInicio th {
-    background-color: #4CAF50;
+    background-color: #042A51;
     color: white;
 }
 

@@ -1,8 +1,16 @@
+main {
+    background-color: #E1E1E1;
+    font-family: 'Montserrat';
+    padding: 5PX;
+    height: 800PX;
+}
+
 /* Seccion de Tablas */
 h2 {
-    font-family: Montserrat SemiBold 600;
+    font-weight: 600;
     font-size: 36px;
     margin: 25px;
+    text-align: center;
 }
 
 .tablasVendedorPaginaInicio {
@@ -25,7 +33,7 @@ h2 {
 }
 
 .tablasVendedorPaginaInicio th {
-    background-color: #4CAF50;
+    background-color: #042A51;
     color: white;
 }
 
@@ -53,6 +61,6 @@ h2 {
 
 .editarBoton:hover {
 
-    color: #279C44;
+    background-color: #525146;
 
 }

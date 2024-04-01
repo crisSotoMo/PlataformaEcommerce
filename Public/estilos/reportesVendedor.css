@@ -4,12 +4,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .tableContainer {
     width: 95%;
     font-family: 'Montserrat';
     margin-top: 30px;
+}
+
+.tableContainer h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #042A51;
 }
 
 .styledTable {
