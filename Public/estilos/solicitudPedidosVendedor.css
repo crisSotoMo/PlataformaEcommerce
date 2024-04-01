@@ -86,17 +86,24 @@ table {
 }
 
 .button {
-    font-weight: 300;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-    color: #fff;
-    text-align: center;
-    height: 30px;
+  font-family: Montserrat;
+  cursor: pointer;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 15px;
+  display: inline-block; /* Ajuste automático al ancho del contenido */
 }
 
-.secondaryButton{
-    background-color: rgb(102, 102, 102);
+.primaryButton {
+  font-size: 18px;
+  background-color: #043965;
+  color: #fff;
+}
+
+.secondaryButton {
+  font-size: 12px;
+  background-color: #e1e1e1;
+  color: black;
 }
 
 .sectionStatus {

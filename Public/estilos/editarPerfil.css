@@ -1,3 +1,22 @@
+/* Estilos generales */
+body {
+  font-family: "Montserrat";
+}
+
+/* Estilos del formulario */
+
+.pictureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+  width: 80%;
+  img {
+    width: 50%;
+    margin: 10px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 420px;
@@ -14,11 +33,6 @@
   flex-direction: column; /* Apilar elementos verticalmente */
   justify-content: center; /* Alinear elementos verticalmente */
   align-items: center; /* Centrar elementos horizontalmente */
-}
-
-.container i {
-  font-size: 18px;
-  color: #ccc;
 }
 
 .containerTitle {
@@ -42,15 +56,11 @@
   width: 100%; /* Ancho del formSection */
 }
 
-h2 {
-  margin-top: 20px;
-}
-
 .sectionTitle {
   margin: 15px 0px;
   display: flex;
-  flex-direction: row;
-  text-indent: 10px;
+  flex-direction: column;
+  text-indent: 2px;
 }
 
 .formSection {
@@ -64,29 +74,28 @@ h2 {
   font-family: "Montserrat";
 }
 
-#categoriaAgregar {
-  margin-left: 8px;
-}
-
-/* #categoriaEliminar {
-  margin-left: 8px;
-} */
-
-.primaryButton {
-  line-height: 30px;
-  width: 150px;
+.button {
   font-family: Montserrat;
-  font-size: 18px;
-
   cursor: pointer;
   border: none;
   padding: 8px 30px;
   border-radius: 15px;
+  display: inline-block; /* Ajuste automático al ancho del contenido */
+}
+
+.primaryButton {
+  font-size: 18px;
   background-color: #043965;
   color: #fff;
 }
 
-.inputButton {
+.secondaryButton {
+  font-size: 12px;
+  background-color: #e1e1e1;
+  color: black;
+}
+
+.inputButtons {
   margin-top: 20px;
   align-self: center; /* Mover el botón al final del contenedorBody */
 }
