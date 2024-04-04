@@ -1,3 +1,9 @@
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 /* Estilos generales */
 body {
   font-family: "Montserrat";
