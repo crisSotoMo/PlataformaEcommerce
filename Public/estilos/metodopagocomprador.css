@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+main {
+    display: flex;
+}
+
 .container {
     width: 100%;
     max-width: 420px;
@@ -23,48 +27,28 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #042A51; 
-}
-
-
-#current-account {
-    margin-bottom: 20px;
-}
-
-.input-container {
-    position: relative;
-    margin-bottom: 10px;
+    color: #042A51;
 }
 
 .inputsSections {
-
-    position: relative;
-    padding-top: 25px;
-
-
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .inputsSections i {
-
     font-size: 18px;
     color: #ccc;
-
+    margin-right: 10px;
 }
 
 .inputsSections input {
-    width: calc(80% - 40px); 
-    padding: 10px 10px 10px 30px; 
+    flex: 1;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-    margin-bottom: 10px;
     text-align: center;
-}
-
-.input {
-    width: 300px;
-    font-family: Montserrat SemiBold 600;
-    font-size: 20px;
 }
 
 button {

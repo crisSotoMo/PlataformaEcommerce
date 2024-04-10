@@ -8,17 +8,14 @@
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
-    <link rel="stylesheet" type="text/css" href="../public/estilos/metodopagocomprador.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/metodoPagoComprador.css">
     <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- Íconos -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -38,27 +35,41 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h2>REGISTRO TARJETA DE DEBITO/CREDITO</h2>
-        <div class="inputsSections">
-            <i class="fas fa-bars"></i>
-            <input type="text" id="nombre-tarjeta" placeholder="NOMBRE EN LA TARJETA">
-        </div>
-        <div class="inputsSections">
-            <i class="fa fa-credit-card"></i>
-            <input type="text" id="numero-tarjeta" placeholder="NUMERO DE LA TARJETA">
-        </div>
-        <div class="inputsSections">
-            <i class="fa fa-calendar"></i>
-            <input type="text" id="fecha-vencimiento" placeholder="FECHA DE VENCIMIENTO">
-        </div>
-        <div class="inputsSections">
-            <i class="fas fa-lock"></i>
-            <input type="text" id="codigo-seguridad" placeholder="CODIGO DE SEGURIDAD(CVV)">
+    <main>
+        <div class="container" id="tarjetaContainer">
+            <h2>MÉTODO DE PAGO REGISTRADO</h2>
+            <div class="inputsSections">
+                <i class="fa fa-credit-card"></i>
+                <div class="numeroTarjetaContainer">
+                    <div id="numeroTarjetaDisplay"></div>
+                    <input type="hidden" class="numeroTarjeta" placeholder="NUMERO DE LA TARJETA">
+                </div>
+            </div>
+            <button onclick="eliminarTarjeta()">ELIMINAR</button>
         </div>
 
-        <button onclick="agregarTarjeta()">AGREGAR</button>
-    </div>
+        <div class="container">
+            <h2>REGISTRO TARJETA DE DEBITO/CREDITO</h2>
+            <div class="inputsSections">
+                <i class="fas fa-bars"></i>
+                <input type="text" id="nombreTarjeta" placeholder="NOMBRE EN LA TARJETA">
+            </div>
+            <div class="inputsSections">
+                <i class="fa fa-credit-card"></i>
+                <input type="text" id="numeroTarjeta" placeholder="NUMERO DE LA TARJETA">
+            </div>
+            <div class="inputsSections">
+                <i class="fa fa-calendar"></i>
+                <input type="month" id="fechaVencimiento" placeholder="FECHA DE VENCIMIENTO">
+            </div>
+            <div class="inputsSections">
+                <i class="fas fa-lock"></i>
+                <input type="text" id="codigoSeguridad" placeholder="CODIGO DE SEGURIDAD(CVV)">
+            </div>
+
+            <button onclick="agregarTarjeta()">AGREGAR</button>
+        </div>
+    </main>
 
     <footer>
         <nav class="navFooter">
@@ -77,10 +88,8 @@
         </section>
     </footer>
 
-    <!--Script-->
-
     <script src="../public/scripts/metodoPagoComprador.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
