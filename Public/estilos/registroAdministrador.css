@@ -84,7 +84,8 @@ ul {
 
 .inputsSections {
   position: relative;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .inputsSections i {
