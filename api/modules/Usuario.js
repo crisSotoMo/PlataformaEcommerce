@@ -2,18 +2,19 @@
 const mongoose = require("mongoose");
 
 const schema_usuario = new mongoose.Schema({
-    foto: {type: String, required: true, unique: false},
+    rol: {type: String, required: true, unique: false}, // Se agrego rol como atributo de Usuario
+    tipoIdentificacion: {type: String, required: true, unique: false},
+    identificacion: {type: String, required: true, unique: true}, // Se cambio nombre de cedula por identificacion como atributo de Usuario
     nombre: {type: String, required: true, unique: false},
     apellido: {type: String, required: true, unique: false},
-    tipoIdentificacion: {type: String, required: true, unique: false},
-    cedula: {type: String, required: true, unique: true},
-    correo: {type: String, required: true, unique: true},
     telefono: {type: String, required: true, unique: false},
-    nombreDelTramo: {type: String, required: true, unique: false},
-    cuentaIban: {type: String, required: true, unique: true},
-    permisosMunicipales: {type: String, required: true, unique: false},
+    correo: {type: String, required: true, unique: true},
     contrasenna: {type: String, required: true, unique: false},
-    estado: {type: String, default: "Inactivo"},
+    foto: {type: String, required: false, unique: false},
+    nombreDelComercio: {type: String, required: false, unique: false}, // Se cambio nombre de nombreDelTramo por nombreDelComercio como atributo de Usuario
+    cuentaIBAN: {type: String, required: false, unique: true},
+    permisosMunicipales: {type: String, required: false, unique: false},
+    estado: {type: String, default: "Inactivo"}
     // productos:[
     //     {
     //         nombre_prod:{type:String,required:false,unique:false},

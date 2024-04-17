@@ -3,21 +3,21 @@ const Usuario = require("../modules/Usuario");
 const router = express.Router();
 
 // POST
-
 router.post("/registrar", function (req, res) {
     let body = req.body;
     let nuevo_usuario = new Usuario({
-        foto: body.foto,
+        rol: body.rol, // Se agrego rol como atributo de Usuario
+        tipoIdentificacion: body.tipoIdentificacion,
+        identificacion: body.identificacion, // Se cambio nombre de cedula por identificacion como atributo de Usuario
         nombre: body.nombre,
         apellido: body.apellido,
-        tipoIdentificacion: body.tipoIdentificacion,
-        cedula: body.cedula,
-        correo: body.correo,
         telefono: body.telefono,
-        nombreDelTramo: body.nombreDelTramo,
-        cuentaIban: body.cuentaIban,
-        permisosMunicipales: body.permisosMunicipales,
+        correo: body.correo,
         contrasenna: body.contrasenna,
+        foto: body.foto,
+        nombreDelComercio: body.nombreDelComercio, // Se cambio nombre de nombreDelTramo por nombreDelComercio como atributo de Usuario
+        cuentaIBAN: body.cuentaIBAN,
+        permisosMunicipales: body.permisosMunicipales,
     });
 
     // error, usuarioDB
@@ -37,42 +37,30 @@ router.post("/registrar", function (req, res) {
 })
 
 // GET GENERAL
-
 router.get('/listar', function (req, res) {
-
     Usuario.find()
         .then((listaUsuarios) => {
-
             res.status(200).json({
-
                 mensaje: "Listado de Usuarios",
                 listaUsuarios
-
             })
-
         }).catch((error) => {
-
             res.json({
-
                 resultado: false,
                 error
-
             })
-
         })
-
 })
 
-// GET CEDULA
-
-router.get("/buscar-persona-cedula", (req, res) => {
-    let identificacion = req.query.cedula
-
-    Usuario.find({ cedula: identificacion })
-        .then((buscarCedula) => {
+// GET USUARIO POR IDENTIFICACION
+router.get("/buscar-persona-identificacion", (req, res) => {
+    Usuario.find({
+            identificacion: req.query.identificacion
+        })
+        .then((buscarIdentificacion) => {
             res.status(200).json({
-                mensaje: "Cedula Encontrada",
-                buscarCedula,
+                mensaje: "Identificación Encontrada",
+                buscarIdentificacion,
             })
         })
         .catch((error) => {
@@ -83,10 +71,18 @@ router.get("/buscar-persona-cedula", (req, res) => {
         })
 })
 
+// Actualizar información de Usuario
 router.put("/modificar", (req, res) => {
-    const { _id, ...updateData } = req.body;
+    const {
+        _id,
+        ...updateData
+    } = req.body;
 
-    Usuario.updateOne({ _id }, { $set: updateData })
+    Usuario.updateOne({
+            _id
+        }, {
+            $set: updateData
+        })
         .then((info) => {
             res.status(200).json({
                 resultado: true,
@@ -103,11 +99,16 @@ router.put("/modificar", (req, res) => {
         })
 })
 
+// ELiminar Usuario
 router.delete("/eliminar", async (req, res) => {
     try {
-        const { _id } = req.body;
+        const {
+            _id
+        } = req.body;
 
-        const info = await Usuario.deleteOne({ _id });
+        const info = await Usuario.deleteOne({
+            _id
+        });
 
         if (info.deletedCount === 0) {
             res.status(404).json({
