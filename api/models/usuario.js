@@ -11,17 +11,7 @@ const schema_usuario = new mongoose.Schema({
     correo: {type: String, required: true, unique: true},
     contrasenna: {type: String, required: true, unique: false},
     foto: {type: String, required: false, unique: false},
-    nombreDelComercio: {type: String, required: false, unique: false}, // Se cambio nombre de nombreDelTramo por nombreDelComercio como atributo de Usuario
-    cuentaIBAN: {type: String, required: false, unique: true},
-    permisosMunicipales: {type: String, required: false, unique: false},
     estado: {type: String, default: "Inactivo"}
-    // productos:[
-    //     {
-    //         nombre_prod:{type:String,required:false,unique:false},
-    //         descripcion:{type:String,required:false,unique:false}
-    //     }
-    // ]
-    
 });
 
 module.exports = mongoose.model("Usuario", schema_usuario, "usuario");

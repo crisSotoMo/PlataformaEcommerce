@@ -1,6 +1,37 @@
 const express = require("express");
-const Usuario = require("../modules/Usuario");
+const Usuario = require("../models/usuario");
 const router = express.Router();
+
+// POST
+router.post("/ingresar",function (req, res){
+    // logica = si la informacion ingresada por un usuario, tiene la misma contrasenna y el mismo email en una lista, debe de aceptar la info, de lo contrario debe mostrar que los datos están incorrectos. 
+    let correo = req.body.correo;
+    let contrasenna = req.body.contrasenna;
+    Usuario.find({
+        correo
+    })
+    .then((buscarUsuario) => {
+        if(buscarUsuario[0].contrasenna == contrasenna){
+            res.status(200).json({
+                mensaje: "Inicio de sesión exitoso!",
+                resultado: buscarUsuario
+            })
+        }
+        else{
+            res.status(200).json({
+                mensaje: "Correo o contraseña invalido",
+                resultado: false
+            })
+        }
+    })
+    .catch((error) => {
+        res.json({
+            resultado: false,
+            error,
+        })
+    })
+}
+)
 
 // POST
 router.post("/registrar", function (req, res) {
@@ -15,9 +46,6 @@ router.post("/registrar", function (req, res) {
         correo: body.correo,
         contrasenna: body.contrasenna,
         foto: body.foto,
-        nombreDelComercio: body.nombreDelComercio, // Se cambio nombre de nombreDelTramo por nombreDelComercio como atributo de Usuario
-        cuentaIBAN: body.cuentaIBAN,
-        permisosMunicipales: body.permisosMunicipales,
     });
 
     // error, usuarioDB
@@ -42,7 +70,7 @@ router.get('/listar', function (req, res) {
         .then((listaUsuarios) => {
             res.status(200).json({
                 mensaje: "Listado de Usuarios",
-                listaUsuarios
+                resultado: listaUsuarios
             })
         }).catch((error) => {
             res.json({
@@ -53,14 +81,14 @@ router.get('/listar', function (req, res) {
 })
 
 // GET USUARIO POR IDENTIFICACION
-router.get("/buscar-persona-identificacion", (req, res) => {
+router.get("/buscar-persona-identificacion/:id", (req, res) => {
     Usuario.find({
-            identificacion: req.query.identificacion
+            identificacion: req.params.id
         })
         .then((buscarIdentificacion) => {
             res.status(200).json({
                 mensaje: "Identificación Encontrada",
-                buscarIdentificacion,
+                resultado: buscarIdentificacion 
             })
         })
         .catch((error) => {
