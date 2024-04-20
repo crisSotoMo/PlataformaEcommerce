@@ -5,8 +5,7 @@ const router = express.Router();
 // POST
 router.post("/registrar", function (req, res) {
     let body = req.body;
-    let nueva_tarjeta = new Tarjeta({
-        idUsuario: body.idUsuario, 
+    let nueva_tarjeta = new Tarjeta({ 
         idMetodo: body.idMetodo,
         numeroTarjeta: body.numeroTarjeta,
         tarjetaCvv: body.tarjetaCvv,
@@ -28,3 +27,5 @@ router.post("/registrar", function (req, res) {
             })
         })
 })
+
+module.exports = router;

@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const schema_tarjeta = new mongoose.Schema({
-    idUsuario: {type: String, required: true, unique: false},
     idMetodo: {type: String, required: true, unique: false},
     numeroTarjeta: {type: String, required: true, unique: true},
     tarjetaCvv: {type: String, required: true, unique: false},
