@@ -13,7 +13,7 @@ router.post("/ingresar",function (req, res){
     .then((buscarUsuario) => {
         if(buscarUsuario[0].contrasenna == contrasenna){
             res.status(200).json({
-                mensaje: "Inicio de sesión exitoso!",
+                mensaje: "¡Inicio de sesión exitoso!",
                 resultado: buscarUsuario
             })
         }
