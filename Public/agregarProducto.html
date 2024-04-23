@@ -59,7 +59,7 @@
                     <div class="sectionTitle">
                         <label for="quantity">Cantidad</label>
                     </div>
-                    <input class="sectionInput" type="text" id="quantity" name="quantity" placeholder="CANTIDAD DE PRODUCTOS"
+                    <input class="sectionInput" type="number" id="quantity" name="quantity" placeholder="CANTIDAD DE PRODUCTOS"
                         required />
                     <br />
                 </div>
@@ -67,17 +67,17 @@
                     <div class="sectionTitle">
                         <label for="price">Precio</label>
                     </div>
-                    <input class="sectionInput" type="text" id="price" name="price" placeholder="PRECIO DEL PRODUCTO"
+                    <input class="sectionInput" type="number" id="price" name="price" placeholder="PRECIO DEL PRODUCTO"
                         required />
                 </div>
                 <div class="formSection">
                     <div class="sectionTitle">
-                        <label for="phone">Impuesto</label>
+                        <label for="tax">Impuesto</label>
                     </div>
                     <input class="sectionInput" type="tax" id="tax" name="tax" placeholder="IMPUESTO EN EL PRODUCTO" required />
                 </div>
                 <div class="inputButtons">
-                    <button id="update" class="button primaryButton">Agregar Producto</button>
+                    <button id="addProduct" class="button primaryButton">Agregar Producto</button>
                 </div>
             </form>
         </div>
@@ -105,7 +105,7 @@
     <!--Sweet Alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Controller-->
-    <script src="/public/scripts/editarPerfil.js"></script>
+    <script src="/public/scripts/registroProductos.js"></script>
 </body>
 
 </html>
