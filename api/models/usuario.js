@@ -17,4 +17,4 @@ const schema_usuario = new mongoose.Schema({
 module.exports = mongoose.model("Usuario", schema_usuario, "usuario");
 
 // cedula se agarra como string??
-// tipo de identificación dos opciones. 
+// tipo de identificación dos opciones.  

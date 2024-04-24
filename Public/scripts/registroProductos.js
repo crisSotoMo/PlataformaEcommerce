@@ -5,12 +5,13 @@ const productName = document.querySelector("#productName");
 const productQuantity = document.querySelector("#quantity");
 const productPrice = document.querySelector("#price");
 const productTax = document.querySelector("#tax");
+const descripcion = document.querySelector("#description")
 const addProductBtn = document.querySelector("#addProduct");
 
 /*Validate Empty Fields*/
 function validateEmptyFields() {
   let error = false;
-  let requiredFields = document.querySelectorAll("Input [required]");
+  let requiredFields = document.querySelectorAll("input[required]");
   for (let i = 0; i < requiredFields.length; i++) {
     if (requiredFields[i].value == "") {
       requiredFields[i].classList.add("error");

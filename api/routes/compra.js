@@ -1,14 +1,16 @@
 const express = require("express");
-const Usuario = require("../models/compra");
+const Compra = require("../models/compra");
 const router = express.Router();
 
 // POST
 router.post("/registrar", function (req, res) {
     let body = req.body;
-    let nueva_compra = new Compra({ 
+    let nueva_compra = new Compra({
+        idPersona : body.idPersona,
         fechaCompra: body.fechaCompra,
         montoTotal: body.montoTotal,
         estadoCompra: body.estadoCompra,
+        productos: body.productos
     });
 
     // error, tarjetaDB
@@ -39,6 +41,26 @@ router.get('/listar', function (req, res) {
             res.status(500).json({
                 resultado: false,
                 error
+            })
+        })
+})
+
+// Obtener ordenes de compra por Usuario
+// GET ORDENES BY ID USUARIO
+router.get("/obtenerComprasUsuario/:idPersona", (req, res) => {
+    Compra.find({
+            idPersona: req.params.idPersona
+        })
+        .then((buscarCompras) => {
+            res.status(200).json({
+                mensaje: "Compras Encontradas",
+                resultado: buscarCompras 
+            })
+        })
+        .catch((error) => {
+            res.json({
+                resultado: false,
+                error,
             })
         })
 })

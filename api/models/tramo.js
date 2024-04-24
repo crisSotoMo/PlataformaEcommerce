@@ -8,13 +8,14 @@ const schema_tramo = new mongoose.Schema({
     estadoSolicitud: {type: String, required: true, unique: false},
     calificaciones: [
         {
-            calificacion: {type: String, required: false, unique: false},
+            calificacion: {type: Number, required: false, unique: false},
         }
     ],
     inventario:[
         {
-            cantidad: {type: String, required: true, unique: false},
-            precioUnitario:{type: String, required: true, unique: false},
+            cantidad: { type: Number, required: true, unique: false},
+            precioUnitario:{ type: Number, required: true, unique: false},
+            impuesto: { type: Number, required: true, unique: false }
         }
     ]
 });

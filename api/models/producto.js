@@ -8,4 +8,8 @@ const schema_producto = new mongoose.Schema({
     descripcion: { type: String, required: true, unique: false }
 });
 
+
+// Consultarle a Arturo donde se va a agregar el impuesto. 
+
+
 module.exports = mongoose.model("Producto", schema_producto, "producto");
