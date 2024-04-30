@@ -107,7 +107,7 @@ p {
     color: orange;
 }
 
-/* Estilos del catálogo */
+/* Estilos del catalogo */
 .cardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

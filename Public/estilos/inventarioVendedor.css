@@ -2,6 +2,11 @@ body {
     font-family: "Montserrat";
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 
 /* .catalogoCuerpo {
     border: solid 2px black;
@@ -43,7 +48,6 @@ table {
   
   th {
     background-color: #E1E1E1;
-    text-align: left;
     text-indent: 6px;
     padding: 20px;
     font-weight: 600;

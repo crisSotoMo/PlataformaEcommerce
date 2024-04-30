@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - ProduMarket</title>
+    <title>catalogo - ProduMarket</title>
     <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href='../public/estilos/reset.css'>
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
@@ -33,7 +33,14 @@
                 <li><a href="/public/misPedidosComprador.html">MIS PEDIDOS</a></li>
                 <li><a href="/public/catalogoComprador.html">CATÁLOGO</a></li>
                 <i class="fas fa-shopping-cart" onclick="window.location.href = '/public/carritoCompra.html';"></i>
-                <i class="fas fa-bars" onclick="window.location.href = '#';"></i>
+                <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+                    <div class="dropdown-content"> 
+                        <a href="/public/editarPerfilComprador.html">Editar Perfil</a>
+                        <a href="/public/metodoPagoComprador.html">Método de Pago</a>
+                        <a href="/public/restablecerContraseñaComprador.html">Cambiar contraseña</a>
+                        <a href="/public/inicio.html">Cerrar sesión</a>
+                    </div>
+                </div> 
             </ul>
         </nav>
     </header>

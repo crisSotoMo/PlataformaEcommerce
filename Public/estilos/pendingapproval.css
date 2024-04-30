@@ -1,29 +1,40 @@
-
-footer {
-  position: fixed;
-  bottom: 0;
-  bottom: 0
-}
-
-body {
-  font-family: "Montserrat", sans-serif; /* Apply Montserrat font */
-  background-color: #fff; /* Set background color */
-}
-
-table {
+main{
+  font-family: 'Montserrat';
+  height: 900px;
+  background-color: #E1E1E1;
+  padding: 5px;
   width: 100%;
-  border-collapse: collapse;
-  background-color: #e1e1e1; /* Set table background color */
 }
 
-th, td {
+h2 {
+
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 600;
+  margin: 25px;
+}
+
+.tabladesolicitudes {
+  width: calc(100% - 25px);
+  /* Ancho de la tabla - Margen derecho */
+  border-collapse: collapse;
+  margin: 25px auto;
+}
+
+.tabladesolicitudes th,
+.tabladesolicitudes td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
-th {
+.tabladesolicitudes tr:nth-child(even){
   background-color: #f2f2f2;
+}
+
+.tabladesolicitudes th{
+  background-color: #042A51;
+  color: white;
 }
 
 .approve-btn,
@@ -31,15 +42,20 @@ th {
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .approve-btn {
-  background-color: #525146;
+  background-color: #042A51;
   color: white;
 }
 
 .decline-btn {
-  background-color: #525146;
+  background-color: #042A51;
   color: white;
+}
+
+.approve-btn:hover,
+.decline-btn:hover{
+  background-color: #525146;
 }

@@ -1,10 +1,14 @@
 /* Seccion de Productores */
 main {
-    background-color: #E1E1E1;
     font-family: "Montserrat";
     height: 800px;
     padding: 5px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
 
 h2 {
     font-weight: 600;

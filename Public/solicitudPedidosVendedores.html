@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Catálogo</title>
+  <title>MI CATÁLOGO</title>
   <!-- Estilos -->
   <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css" />
   <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
@@ -31,7 +31,14 @@
             <li><a href="/public/reportesVendedor.html">REPORTES</a></li>
             <li><a href="/public/inventarioVendedor.html">MI CATÁLOGO</a></li>
             <li><a href="/public/solicitudPedidosVendedores.html">SOLICITUD DE PEDIDOS</a></li>
-            <i class="fas fa-bars"></i>
+            <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+              <div class="dropdown-content"> 
+                  <a href="/public/editarPerfilVendedor.html">Editar Perfil</a>
+                  <a href="/public/cuentaBancariaVendedor.html">Método de Pago</a>
+                  <a href="/public/restablecerContraseñaVendedor.html">Cambiar contraseña</a>
+                  <a href="/public/inicio.html">Cerrar sesión</a>
+              </div>
+          </div>
         </ul>
     </nav>
 </header>
@@ -55,7 +62,7 @@
                 <img src="../public/imagenes/piña.jpg" alt="Imagen de una piña"> </img>
                 <ul>
                   <li>
-                    <p>Ejemplo del titulo del producto con detalles.</p>
+                    <p>Ejemplo del título del producto con detalles.</p>
                   </li>
                   <li>
                     <p> Cantidad: 2</p>
@@ -69,7 +76,7 @@
                 <li>Dirección: Ejemplo de dirección 1234 ejemplo de dirección.</li>
                 <li>Datos del cliente:</li>
                 <li>Correo: </li>
-                <li>Número de telefono</li>
+                <li>Número de teléfono</li>
                 <li>Cédula</li>
               </ul>
             <td>
