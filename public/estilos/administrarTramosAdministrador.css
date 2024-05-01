@@ -2,6 +2,10 @@ body {
     font-family: "Montserrat";
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
 
 /* .catalogoCuerpo {
     border: solid 2px black;

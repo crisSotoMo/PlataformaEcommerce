@@ -5,6 +5,12 @@ main {
     height: 800PX;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+
 /* Seccion de Tablas */
 h2 {
     font-weight: 600;

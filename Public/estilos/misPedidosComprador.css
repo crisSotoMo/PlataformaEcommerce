@@ -17,6 +17,11 @@ table {
 
 } */
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 .catalogoCuerpo {
     padding: 30px;
     h1 {

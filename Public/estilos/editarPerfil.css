@@ -3,6 +3,11 @@ body {
   font-family: "Montserrat";
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 /* Estilos del formulario */
 
 .pictureContainer {

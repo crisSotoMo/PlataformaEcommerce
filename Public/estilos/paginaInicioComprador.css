@@ -1,11 +1,14 @@
 main{
     font-family: 'Montserrat';
-    height: 800px;
-    background-color: #E1E1E1;
     padding: 5px;
 }
 
-/* Seccion de Catalogo */
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+/* Seccion de catalogo */
 
 h2 {
 
@@ -30,11 +33,11 @@ h2 {
     margin: 25px;
 }
 
-.imagenCatalogoProducto{
+.imagencatalogoProducto{
     width: 100%;
 }
 
-.contenedorImagenCatalogoProducto{
+.contenedorImagencatalogoProducto{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +97,7 @@ h2 {
     color: #000;
 }
 
-.botonIrCatalogo{
+.botonIrcatalogo{
 
     border: 1px solid #042A51;
     text-decoration: none;
@@ -110,11 +113,11 @@ h2 {
 
 }
 
-.botonIrCatalogo:hover, .verCatalogoBoton:hover {
+.botonIrcatalogo:hover, .vercatalogoBoton:hover {
    background-color: #525146;
 }
 
-.verCatalogoContenedor{
+.vercatalogoContenedor{
 
     display: flex;
     justify-content: center;
@@ -123,7 +126,7 @@ h2 {
 
 }
 
-.verCatalogoBoton{
+.vercatalogoBoton{
 
     border-radius: 6px;
     background-color: #042A51;
