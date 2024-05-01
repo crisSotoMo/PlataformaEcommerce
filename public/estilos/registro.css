@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(to bottom, #042A51, #04497b);
+    height: 100vh;
+    font-family: "Montserrat";
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    min-height: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.title-container .title {
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.title-container .title li {
+    width: 50%;
+    transition: .5s ease-in-out;
+}
+
+.title-container .title li:nth-child(2) {
+    border-left: 3px solid #404040;
+}
+
+.title-container .title li a {
+    color: #404040;
+}
+
+.title-container .underline {
+    width: 100%;
+    height: 2px;
+    background-color: #043965;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 20px 0;
+    text-align: center;
+    color: #043965;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los cards */
+}
+
+.card {
+    background-color: #8DC63F;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card:hover {
+    width: 83%;
+    height: 110px;
+}
+
+.card img {
+    width: 90%;
+    display: block;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h5 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.register-link {
+    color: #043965;
+    text-decoration: none;
+    display: block;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}

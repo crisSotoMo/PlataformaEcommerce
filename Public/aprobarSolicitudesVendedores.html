@@ -39,80 +39,71 @@
   </header>
 
   <main>
-
-
     <h2>Solicitudes de Registro</h2>
 
-          <table class="tabladesolicitudes">
-              <thead>
-                  <tr>
-                      <th>Fecha</th>
-                      <th>Cédula</th>
-                      <th>Nombre del Vendedor</th>
-                      <th>Nombre del Tramo</th>
-                      <th>Correo electrónico</th>
-                      <th>Acción</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                    <td>2024-03-30</td>
-                    <td>305300958</td>
-                    <td>Usuario</td>
-                    <td>Logic Lab</td>
-                    <td>Usuario@ucenfotec.com</td>
-                    <td>
-                      <button class="approve-btn">Aprobar</button>
-                      <button class="decline-btn">Rechazar</button>
-                    </td>
-                  </tr>
-              </tbody>
-          </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Identificacion</th>
+          <th>Nombre del Vendedor</th>
+          <th>Nombre del Tramo</th>
+          <th>Correo Electronico</th>
+          <th>Documentos</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
 
-      <h2>Solicitudes de Cambio de Contraseña</h2>
+    <h2>Solicitudes de Cambio de Contrasena</h2>
 
-          <table class="tabladesolicitudes">
-              <thead>
-                  <tr>
-                    <th>Fecha</th>
-                    <th>Cédula</th>
-                    <th>Nombre del Vendedor</th>
-                    <th>Acción</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                    <td>2024-03-30</td>
-                    <td>305300958</td>
-                    <td>Usuario</td>
-                    <td>
-                      <button class="approve-btn">Aprobar</button>
-                      <button class="decline-btn">Rechazar</button>
-                    </td>
-                  </tr>
-              </tbody>
-          </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Identificacion</th>
+          <th>Nombre del Vendedor</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024-03-30</td>
+          <td>305300958</td>
+          <td>Daniel Montano</td>
+          <td>
+            <button class="approve-btn">Aprobar</button>
+            <button class="decline-btn">Rechazar</button>
+          </td>
+        </tr>
 
+      </tbody>
+    </table>
   </main>
 
   <footer>
     <nav class="navFooter">
-        <ul>
-            <li><a href="/public/paginaInicioAdministrador.html">INICIO</a></li>
-            <li><a href="/public/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
-            <li><a href="/public/catalogoAdministrador.html">CATÁLOGO</a></li>
-            <li><a href="/public/reportesAdministrador.html">REPORTES</a></li>
-            <li><a href="/public/agregarCategoriasAdministrador.html">ADMINISTRAR CATEGORÍAS</a></li>
-        </ul>
-        <hr>
+      <ul>
+        <li><a href="/public/paginaInicioAdministrador.html">INICIO</a></li>
+        <li><a href="/public/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
+        <li><a href="/public/catalogoAdministrador.html">CATÁLOGO</a></li>
+        <li><a href="/public/reportesAdministrador.html">REPORTES</a></li>
+        <li><a href="/public/agregarCategoriasAdministrador.html">ADMINISTRAR CATEGORÍAS</a></li>
+      </ul>
+      <hr>
     </nav>
     <section class="footerDescription">
-        <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+      <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
     </section>
     <section class="copyrights">
-        <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+      <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
     </section>
-</footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../public/scripts/servicios/aprobarVendedorServicio.js"></script>
 
 </body>
 
