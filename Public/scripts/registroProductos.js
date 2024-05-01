@@ -1,12 +1,13 @@
 "Use strict";
 
 /*DOM Reference*/
+const photo = document.querySelector("#productPhoto");
+const photoButton = document.querySelector("#uploadPhotoButton");
 const productName = document.querySelector("#productName");
-const productQuantity = document.querySelector("#quantity");
-const productPrice = document.querySelector("#price");
-const productTax = document.querySelector("#tax");
-const descripcion = document.querySelector("#description")
+const descripcion = document.querySelector("#description");
+const productCategory = document.querySelector("#productCategory");
 const addProductBtn = document.querySelector("#addProduct");
+
 
 /*Validate Empty Fields*/
 function validateEmptyFields() {
@@ -37,44 +38,15 @@ function validateProductName() {
     return error;
 }
 
-/*Validate Product Quantity*/
-function validateProductQuantity() {
+/*Validate Product Category*/
+function validateCategory() {
     let error = false;
-    let totalQuantity = productQuantity.value;
-    let expression = /^[1-9][0-9]?$|^100$/;
-    if (expression.test(totalQuantity) == false) {
-        productQuantity.classList.add("error");
+    let product = productCategory.value;
+    if (product == "") {
+        productName.classList.add("error");
         error = true;
     } else {
-        productQuantity.classList.remove("error");
-    }
-    return error;
-}
-
-/*Validate Product Price*/
-function validateProductPrice() {
-    let error = false;
-    let originalPrice = productPrice.value;
-    let expression = /^[1-9][0-9]*$/;
-    if (expression.test(originalPrice) == false) {
-        productPrice.classList.add("error");
-        error = true;
-    } else {
-        productPrice.classList.remove("error");
-    }
-    return error;
-}
-
-/*Validate Product Tax*/
-function validateProductTax() {
-    let error = false;
-    let addedTax = productTax.value;
-    let expression = /^[1-9][0-9]*(\.[0-9]{1,2})?$/;
-    if (expression.test(addedTax) == false) {
-        productTax.classList.add("error");
-        error = true;
-    } else {
-        productTax.classList.remove("error");
+        productName.classList.remove("error");
     }
     return error;
 }
@@ -87,13 +59,21 @@ function validateProductTax() {
     profilePhone.value = "";
 }*/
 
+let widget_cloudinary = cloudinary.createUploadWidget({
+    cloudName: "dqceegh2x",
+    uploadPreset: "products_preset"
+}, (error, result) => {
+    if (!error && result && result.event === "success") {
+        console.log("Imagen registrada", result.info);
+        photo.src = result.info.secure_url;
+    }
+});
+
 /*Validate Form*/
 function principalForm() {
     let requiredFieldsError = validateEmptyFields();
     let productError = validateProductName();
-    let totalQuantityError = validateProductQuantity();
-    let originalPriceError = validateProductPrice();
-    let addedTaxError = validateProductTax();
+    let categoryError = validateCategory();
     if (requiredFieldsError) {
         Swal.fire({
             title: "Campos vacíos",
@@ -108,37 +88,33 @@ function principalForm() {
             icon: "warning",
             confirmButtonText: "¡Entendido!",
         });
-    } else if (totalQuantityError) {
+    } else if (categoryError) {
         Swal.fire({
-            title: "Cantidad incorrecta",
-            text: "Verifica que sea un número menor o igual a 100",
-            icon: "warning",
-            confirmButtonText: "¡Entendido!",
-        });
-    } else if (originalPriceError) {
-        Swal.fire({
-            title: "Precio inválido",
-            text: "Verifica que el precio no tenga decimales",
-            icon: "warning",
-            confirmButtonText: "¡Entendido!",
-        });
-    } else if (addedTaxError) {
-        Swal.fire({
-            title: "Impuesto inválido",
-            text: "Verifica que el impuesto sea válido",
+            title: "Categoría inválida",
+            text: "Verifica que la categoría seleccionada sea válida",
             icon: "warning",
             confirmButtonText: "¡Entendido!",
         });
     } else {
-        Swal.fire({
+        let fotoProducto = photo.src;
+        let nombreProducto = productName.value;
+        let descripcionProducto = descripcion.value;
+        let categoriaProducto = productCategory.value;
+        
+        registro_producto(categoriaProducto, nombreProducto, fotoProducto,descripcionProducto);
+        //cleanFields();
+
+        /*Swal.fire({
             title: "Información Correcta",
             text: "Su producto ha sido agregado al inventario",
             icon: "success",
             confirmButtonText: "OK"
-        });
+        });*/
     }
-    /*cleanFields();*/
 }
 
 /*Action Button*/
-addProductBtn.addEventListener("click", principalForm)
+addProductBtn.addEventListener("click", principalForm);
+photoButton.addEventListener("click", () => {
+    widget_cloudinary.open();
+}, false);

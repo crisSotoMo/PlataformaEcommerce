@@ -3,6 +3,7 @@ const Usuario = require("../models/usuario");
 const router = express.Router();
 
 // POST
+// URL: http://localhost:8000/api/usuario/ingresar
 router.post("/ingresar",function (req, res){
     // logica = si la informacion ingresada por un usuario, tiene la misma contrasenna y el mismo email en una lista, debe de aceptar la info, de lo contrario debe mostrar que los datos están incorrectos. 
     let correo = req.body.correo;
@@ -34,6 +35,7 @@ router.post("/ingresar",function (req, res){
 )
 
 // POST
+// URL: http://localhost:8000/api/usuario/registrar
 router.post("/registrar", function (req, res) {
     let body = req.body;
     let nuevo_usuario = new Usuario({
@@ -64,7 +66,8 @@ router.post("/registrar", function (req, res) {
         })
 })
 
-// GET GENERAL
+// GET GENERAL 
+// URL: http://localhost:8000/api/usuario/listar
 router.get('/listar', function (req, res) {
     Usuario.find()
         .then((listaUsuarios) => {
@@ -81,6 +84,7 @@ router.get('/listar', function (req, res) {
 })
 
 // GET USUARIO POR IDENTIFICACION
+// URL: http://localhost:8000/api/usuario/buscar-persona-identificacion/:id
 router.get("/buscar-persona-identificacion/:id", (req, res) => {
     Usuario.find({
             identificacion: req.params.id
@@ -100,6 +104,7 @@ router.get("/buscar-persona-identificacion/:id", (req, res) => {
 })
 
 // Actualizar información de Usuario
+// URL: http://localhost:8000/api/usuario/modificar
 router.put("/modificar", (req, res) => {
     const {
         _id,
@@ -128,6 +133,7 @@ router.put("/modificar", (req, res) => {
 })
 
 // ELiminar Usuario
+// URL: http://localhost:8000/api/usuario/eliminar
 router.delete("/eliminar", async (req, res) => {
     try {
         const {

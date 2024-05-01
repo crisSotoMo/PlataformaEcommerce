@@ -8,7 +8,7 @@
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css" />
     <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css" />
-    <link rel="stylesheet" type="text/css" href="../public/estilos/agregarProducto.css" />
+    <link rel="stylesheet" type="text/css" href="/public/estilos/inventarioVendedorEditar.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,65 +39,36 @@
     <main>
         <div class="container">
             <div class="containerTitle">
-                <h1>AGREGAR UN PRODUCTO NUEVO</h1>
+                <h1>Editar Producto</h1>
                 <hr />
             </div>
             <form class="containerBody">
-                <div class="pictureContainer">
-                    <img id="productPhoto">
-                    <button type="button" class="button secondaryButton" id="uploadPhotoButton">Agregar Imagen del
-                        Producto</button>
+                <div class="formSection">
+                    <div class="sectionTitle">
+                        <label for="cantidadDisponible">Disponible</label>
+                    </div>
+                    <input class="sectionInput" type="text" id="cantidadDisponible" name="cantidadDisponible"
+                        placeholder="CANTIDAD" required />
                 </div>
                 <div class="formSection">
                     <div class="sectionTitle">
-                        <label for="productName">Nombre del Producto</label>
+                        <label for="precioProducto">Precio</label>
                     </div>
-                    <input class="sectionInput" type="text" id="productName" name="productName"
-                        placeholder="NOMBRE DEL PRODUCTO" required />
+                    <input class="sectionInput" type="text" id="precioProducto" name="precioProducto"
+                        placeholder="PRECIO" required />
                 </div>
                 <div class="formSection">
                     <div class="sectionTitle">
-                        <label for="Categorías">Categorías</label>
+                        <label for="impuestoProducto">Impuesto</label>
                     </div>
-                    <select class="sectionInput" id="productCategory" name="productCategory" required>
-                        <option value="">Seleccione una categoría...</option>
-                        <option value="Electrónica">Electrónica</option>
-                        <option value="Ropa">Ropa</option>
-                        <option value="Hogar">Hogar</option>
-                        <option value="Jardinería">Jardinería</option>
-                        <option value="Libros">Libros</option>
-                        <option value="Juguetes">Juguetes</option>
-                    </select>
+                    <input class="sectionInput" type="text" id="impuestoProducto" name="impuestoProducto"
+                        placeholder="IMPUESTO" required />
                 </div>
-                <!-- <div class="formSection">
-                    <div class="sectionTitle">
-                        <label for="quantity">Cantidad</label>
-                    </div>
-                    <input class="sectionInput" type="number" id="quantity" name="quantity"
-                        placeholder="CANTIDAD DE PRODUCTOS" required />
-                    <br />
-                </div> -->
-                <!-- <div class="formSection">
-                    <div class="sectionTitle">
-                        <label for="price">Precio</label>
-                    </div>
-                    <input class="sectionInput" type="number" id="price" name="price" placeholder="PRECIO DEL PRODUCTO" required />
-                </div> -->
-                <div class="formSection">
-                    <div class="sectionTitle">
-                        <label for="description">Descripción</label>
-                    </div>
-                    <input class="sectionInput" type="text" id="description" name="description"
-                        placeholder="DESCRIPCIÓN DEL PRODUCTO" required />
-                </div>
-                <!-- <div class="formSection">
-                    <div class="sectionTitle">
-                        <label for="tax">Impuesto</label>
-                    </div>
-                    <input class="sectionInput" type="tax" id="tax" name="tax" placeholder="IMPUESTO EN EL PRODUCTO" required />
-                </div> -->
                 <div class="inputButtons">
-                    <button id="addProduct" class="button primaryButton">Agregar Producto</button>
+                    <a href="/public/inventarioVendedor.html" id="addProduct"
+                        class="button primaryButton">Cancelar</button></a>
+                    <a href="/public/inventarioVendedor.html" button id="addProduct"
+                        class="button primaryButton">Guardar Cambios</button></a>
                 </div>
             </form>
         </div>
@@ -121,15 +92,11 @@
         </section>
     </footer>
 
-    <!--Scripts-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!--Sweet Alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--Script Cloudinary-->
-    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
     <!--Controller-->
     <script src="/public/scripts/registroProductos.js"></script>
-    <script src="/public/scripts/servicios/serviciosProducto.js"></script>
 </body>
 
 </html>
