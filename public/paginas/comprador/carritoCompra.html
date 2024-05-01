@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Compra</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/carritocompra.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="/public/paginas/paginaInicioComprador.html">INICIO</a></li>
+                <li><a href="/public/paginas/misPedidosComprador.html">MIS PEDIDOS</a></li>
+                <li><a href="/public/paginas/catalogoComprador.html">CATÁLOGO</a></li>
+                <i class="fas fa-shopping-cart" onclick="window.location.href = '/public/carritoCompra.html';"></i>
+                <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+                    <div class="dropdown-content"> 
+                        <a href="/public/paginas/editarPerfilComprador.html">Editar Perfil</a>
+                        <a href="/public/paginas/metodoPagoComprador.html">Método de Pago</a>
+                        <a href="/public/paginas/restablecerContraseñaComprador.html">Cambiar contraseña</a>
+                        <a href="/public/paginas/inicio.html">Cerrar sesión</a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mi Carrito</h1>
+        <div class="products">
+            <table class="cart">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- EJEMPLO 1 -->
+                    <tr>
+                        <td>Caja de Fresas</td>
+                        <td>₡1500</td>
+                        <td>2</td>
+                        <td>₡3000</td>
+                    </tr>
+                    <!-- EJEMPLO 2 -->
+                    <tr>
+                        <td>Pera</td>
+                        <td>₡300</td>
+                        <td>1</td>
+                        <td>₡300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="subtotal">
+            <h2>Subtotal</h2>
+            <p>₡3300</p>
+            <h2>Total</h2>
+            <p>₡3300</p>
+            <a href="/public/paginas/#" class="checkout-btn">Finalizar la Compra</a>
+        </div>
+    </div>
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="/public/paginas/paginaInicioComprador.html">INICIO</a></li>
+                <li><a href="/public/paginas/misPedidosComprador.html">MIS PEDIDOS</a></li>
+                <li><a href="/public/paginas/catalogoComprador.html">CATÁLOGO</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

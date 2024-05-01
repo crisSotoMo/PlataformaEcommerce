@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicio - Administrador</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href='../public/estilos/reset.css'>
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/paginaInicioAdministrador.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="/public/paginas/paginaInicioAdministrador.html">INICIO</a></li>
+                <li><a href="/public/paginas/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
+                <li><a href="/public/paginas/catalogoAdministrador.html">CATÁLOGO</a></li>
+                <li><a href="/public/paginas/reportesAdministrador.html">REPORTES</a></li>
+                <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+                    <div class="dropdown-content"> 
+                        <a href="/public/paginas/editarPerfilAdministrador.html">Editar Perfil</a>
+                        <a href="/public/paginas/cuentaBancariaAdministrador.html">Método de Pago</a>
+                        <a href="/public/paginas/restablecerContraseñaAdministrador.html">Cambiar contraseña</a>
+                        <a href="/public/paginas/inicio.html">Cerrar sesión</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seccion de Productores -->
+
+        <h2>Productores</h2>
+
+        <div class="productoresContendorPrincipal">
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 1">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 2">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 3">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 4">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 5">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+
+            <div class="productoresContenedorInformacion">
+
+                <img class="imagenProductor" src="../public/imagenes/piñaEjemplo.png" alt="Imagen producto card 6">
+                <span>Piñas Hnos. Rodriguez</span>
+
+            </div>
+        </div>
+
+        <!-- Seccion de Solicitudes de Registro -->
+
+        <h2>Solicitudes de Registro</h2>
+
+        <table class="solicitudesRegistroTabla">
+            <thead>
+                <tr>
+                    <th>Fecha de solicitud</th>
+                    <th>Identificación</th>
+                    <th>Nombre del vendedor</th>
+                    <th>Nombre del tramo</th>
+                    <th>Correo electrónico</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-03-26</td>
+                    <td>123456</td>
+                    <td>Juan Pérez</td>
+                    <td>Tramo 1</td>
+                    <td>juan.perez@correo.com</td>
+                    <td>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoVisualizar.png"
+                                alt="Visualizar">
+                        </a>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoCheck.png" alt="Listo">
+                        </a>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoEliminar.png"
+                                alt="Eliminar">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2024-03-25</td>
+                    <td>654321</td>
+                    <td>Ana López</td>
+                    <td>Tramo 2</td>
+                    <td>ana.lopez@correo.com</td>
+                    <td>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoVisualizar.png"
+                                alt="Visualizar">
+                        </a>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoCheck.png" alt="Listo">
+                        </a>
+                        <a href="/public/paginas/#">
+                            <img class="imagenTablaSolicitudes" src="../public/imagenes/iconoEliminar.png"
+                                alt="Eliminar">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="/public/paginas/paginaInicioAdministrador.html">INICIO</a></li>
+                <li><a href="/public/paginas/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
+                <li><a href="/public/paginas/catalogoAdministrador.html">CATÁLOGO</a></li>
+                <li><a href="/public/paginas/reportesAdministrador.html">REPORTES</a></li>
+                <li><a href="/public/paginas/agregarCategoriasAdministrador.html">ADMINISTRAR CATEGORÍAS</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

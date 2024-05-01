@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion - Logic Lab</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/iniciarSesion.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="logInAndSignInContainer">
+        <div class="logInAndSignInTitleContainer">
+            <ul class="logInAndSignInTitle" id="logInAndSignInTitle">
+                <li><a href="/public/paginas/iniciarSesion.html">INICIAR SESION</a></li>
+                <li><a href="/public/paginas/registroComprador.html">REGISTRARSE</a></li>
+            </ul>
+
+            <div class="underline"></div>
+        </div>
+
+        <!-- Formulario Log in -->
+        <div class="logInAndSignInDetail" id="logInAndSignInDetail">
+            <form action="" class="formulario">
+
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="usuario" name="usuario" placeholder="Usuario"
+                        required class="input">
+                    <br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-lock"></i> <input type="text" id="contraseña" name="contraseña"
+                        placeholder="Contraseña" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="checkbox" id="logInCheckbox" class="logInCheckbox" name="logInCheckbox">
+
+                    <label class="checkbox" for="checkbox">Recuérdame</label>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="submit" id="logInButton" class="logInButton" name="logInButton" value="INICIAR SESION" onclick="window.location.href = '/public/paginaInicioComprador.html';">
+                    <a class="forgot" href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

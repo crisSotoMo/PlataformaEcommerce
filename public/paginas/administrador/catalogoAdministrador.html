@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalogo Inicio - ProduMarket</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tramo - ProduMarket</title>
     <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href='../public/estilos/reset.css'>
-    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
-    <link rel="stylesheet" type="text/css" href='../public/estilos/paginacion.css'>
-    <link rel="stylesheet" type="text/css" href="../public/estilos/catalogo.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css" />
+    <link rel="stylesheet" type="text/css" href="../public/estilos/catalogo.css" />
+    <link rel="stylesheet" type="text/css" href="../public/estilos/paginacion.css" />
     <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- Íconos -->
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
@@ -28,9 +28,18 @@
         </div>
         <nav class="navHeader">
             <ul>
-                <li><a href="/public/paginas/inicio.html">INICIO</a></li>
-                <li><a href="/public/paginas/catalogoInicio.html">CATÁLOGO</a></li>
-                <li><a href="/public/paginas/iniciarSesion.html">INGRESE</a></li>
+                <li><a href="/public/paginas/paginaInicioAdministrador.html">INICIO</a></li>
+                <li><a href="/public/paginas/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
+                <li><a href="/public/paginas/catalogoAdministrador.html">CATÁLOGO</a></li>
+                <li><a href="/public/paginas/reportesAdministrador.html">REPORTES</a></li>
+                <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+                    <div class="dropdown-content"> 
+                        <a href="/public/paginas/editarPerfilAdministrador.html">Editar Perfil</a>
+                        <a href="/public/paginas/cuentaBancariaAdministrador.html">Método de Pago</a>
+                        <a href="/public/paginas/restablecerContraseñaAdministrador.html">Cambiar contraseña</a>
+                        <a href="/public/paginas/inicio.html">Cerrar sesión</a>
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -40,7 +49,7 @@
             <h2 class="containerHeading">Filtros</h2>
             <form action="#">
                 <label for="searchCatalog">Criterios de búsqueda:</label>
-                <input type="search" id="searchCatalog" placeholder="Buscar...">
+                <input type="search" id="searchCatalog" placeholder="Buscar..." />
                 <label for="searchVendor">Seleccionar tramo:</label>
                 <select id="searchVendor">
                     <option value="todos" selected>Todos los tramos...</option>
@@ -55,69 +64,69 @@
             <h2 class="containerHeading">Productos</h2>
             <div class="cardsContainer">
                 <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
-                    <div class="details">
-                        <div class="priceName">
-                            <h3>Piña dorada</h3>
-                            <p class="price">₡2000</p>
-                        </div>
-                        <h4><a href="/public/paginas/iniciarSesion.html">Hnos.Huertas</a></h4>
-                        <button onclick="window.location.href = '/public/iniciarSesion.html';" class="add-to-cart">+</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
                     <div class="details">
                         <div class="priceName">
                             <h3>Piña dorada</h3>
                             <p class="price">₡2000</p>
                         </div>
                         <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
-                        <button class="add-to-cart">+</button>
+                        <button disabled class="add-to-cart">+</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
                     <div class="details">
                         <div class="priceName">
                             <h3>Piña dorada</h3>
                             <p class="price">₡2000</p>
                         </div>
                         <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
-                        <button class="add-to-cart">+</button>
+                        <button disabled class="add-to-cart">+</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
                     <div class="details">
                         <div class="priceName">
                             <h3>Piña dorada</h3>
                             <p class="price">₡2000</p>
                         </div>
                         <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
-                        <button class="add-to-cart">+</button>
+                        <button disabled class="add-to-cart">+</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
                     <div class="details">
                         <div class="priceName">
                             <h3>Piña dorada</h3>
                             <p class="price">₡2000</p>
                         </div>
                         <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
-                        <button class="add-to-cart">+</button>
+                        <button disabled class="add-to-cart">+</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src='../public/imagenes/piña.jpg' alt="Producto">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
                     <div class="details">
                         <div class="priceName">
                             <h3>Piña dorada</h3>
                             <p class="price">₡2000</p>
                         </div>
                         <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
-                        <button class="add-to-cart">+</button>
+                        <button disabled class="add-to-cart">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../public/imagenes/piña.jpg" alt="Producto" />
+                    <div class="details">
+                        <div class="priceName">
+                            <h3>Piña dorada</h3>
+                            <p class="price">₡2000</p>
+                        </div>
+                        <h4><a href="/public/paginas/#">Hnos.Huertas</a></h4>
+                        <button disabled class="add-to-cart">+</button>
                     </div>
                 </div>
             </div>
@@ -135,13 +144,14 @@
         </section>
     </main>
 
-
     <footer>
         <nav class="navFooter">
             <ul>
-                <li><a href="/public/paginas/inicio.html">INICIO</a></li>
-                <li><a href="/public/paginas/catalogoInicio.html">CATÁLOGO</a></li>
-                <li><a href="/public/paginas/">INGRESE</a></li>
+                <li><a href="/public/paginas/paginaInicioAdministrador.html">INICIO</a></li>
+                <li><a href="/public/paginas/aprobarSolicitudesVendedores.html">SOLICITUDES</a></li>
+                <li><a href="/public/paginas/catalogoAdministrador.html">CATÁLOGO</a></li>
+                <li><a href="/public/paginas/reportesAdministrador.html">REPORTES</a></li>
+                <li><a href="/public/paginas/agregarCategoriasAdministrador.html">ADMINISTRAR CATEGORÍAS</a></li>
             </ul>
             <hr>
         </nav>
@@ -152,8 +162,9 @@
             <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
         </section>
     </footer>
+
     <!-- Scripts -->
-    <script src='/public/scripts/slider.js'></script>
+    <script src="/public/scripts/rating.js"></script>
 </body>
 
 </html>

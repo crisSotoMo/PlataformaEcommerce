@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Pedidos</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="../public/estilos/misPedidosComprador.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Íconos -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+      <h1>ProduMarket</h1>
+    </div>
+    <nav class="navHeader">
+      <ul>
+        <li><a href="/public/paginas/paginaInicioComprador.html">INICIO</a></li>
+        <li><a href="/public/paginas/misPedidosComprador.html">MIS PEDIDOS</a></li>
+        <li><a href="/public/paginas/catalogoComprador.html">CATÁLOGO</a></li>
+        <i class="fas fa-shopping-cart" onclick="window.location.href = '/public/carritoCompra.html';"></i>
+        <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+          <div class="dropdown-content"> 
+              <a href="/public/paginas/editarPerfilComprador.html">Editar Perfil</a>
+              <a href="/public/paginas/metodoPagoComprador.html">Método de Pago</a>
+              <a href="/public/paginas/restablecerContraseñaComprador.html">Cambiar contraseña</a>
+              <a href="/public/paginas/inicio.html">Cerrar sesión</a>
+          </div>
+      </div>  
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="catalogoCuerpo">
+      <table>
+        <h1>Mis Pedidos</h1>
+        <thead>
+          <tr>
+            <th>Datos del Pedido</th>
+            <th>Cédula</th>
+            <th>Mis Datos</th>
+            <th>Estado</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="product">
+                <img src="../public/imagenes/piña.jpg" alt="Imagen de una piña"> </img>
+                <ul>
+                  <li>
+                    <p>Ejemplo del título del producto con detalles.</p>
+                  </li>
+                  <li>
+                    <p> Cantidad: 2</p>
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>0-0000-0000</td>
+            <td>
+              <ul>
+                <li>Dirección: Ejemplo de dirección 1234 ejemplo de dirección.</li>
+                <li>Mis datos:</li>
+                <li>Correo: </li>
+                <li>Número de telefono</li>
+                <li>Cédula</li>
+              </ul>
+            <td>
+              <button class="button secondaryButton">Pendiente</button>
+            </td>
+            <td>
+              ₡2000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product">
+                <img src="../public/imagenes/piña.jpg" alt="Imagen de una piña"> </img>
+                <ul>
+                  <li>
+                    <p>Ejemplo del título del producto con detalles.</p>
+                  </li>
+                  <li>
+                    <p> Cantidad: 2</p>
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>0-0000-0000</td>
+            <td>
+              <ul>
+                <li>Dirección: Ejemplo de dirección 1234 ejemplo de dirección.</li>
+                <li>Mis Datos:</li>
+                <li>Correo: </li>
+                <li>Número de telefono</li>
+                <li>Cédula</li>
+              </ul>
+            </td>
+            <td>
+              <button class="button secondaryButton">Pendiente</button>
+            </td>
+            <td>$2000</td>
+          </tr>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <nav class="navFooter">
+      <ul>
+        <li><a href="/public/paginas/paginaInicioComprador.html">INICIO</a></li>
+        <li><a href="/public/paginas/misPedidosComprador.html">MIS PEDIDOS</a></li>
+        <li><a href="/public/paginas/catalogoComprador.html">CATÁLOGO</a></li>
+      </ul>
+      <hr>
+    </nav>
+    <section class="footerDescription">
+      <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+    </section>
+    <section class="copyrights">
+      <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
