@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    min-height: 150px;
+    background: #fff;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat";
+    margin: 155px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #042A51;
+}
+
+#current-account {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputsSections {
+
+    position: relative;
+    padding-top: 25px;
+
+
+}
+
+.inputsSections i {
+
+    font-size: 18px;
+    color: #ccc;
+
+}
+
+.inputsSections input {
+    width: calc(100% - 25px);
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: content-box;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.input {
+    width: 300px;
+    font-family: Montserrat SemiBold 600;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 15px;
+    background-color: #043965;
+    margin-right: 25px;
+    color: #fff;
+    float: right;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

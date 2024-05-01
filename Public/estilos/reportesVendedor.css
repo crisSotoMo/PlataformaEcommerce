@@ -1,0 +1,45 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableContainer {
+    width: 95%;
+    font-family: 'Montserrat';
+    margin-top: 30px;
+}
+
+.tableContainer h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #042A51;
+}
+
+.styledTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.styledTable th,
+.styledTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.styledTable th {
+    background-color: #f2f2f2;
+}
+
+.styledTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styledTable tbody tr:hover {
+    background-color: #e2f0ff;
+}

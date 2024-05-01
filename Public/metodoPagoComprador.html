@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Registration</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/metodoPagoComprador.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="/public/paginaInicioComprador.html">INICIO</a></li>
+                <li><a href="/public/misPedidosComprador.html">MIS PEDIDOS</a></li>
+                <li><a href="/public/catalogoComprador.html">CATÁLOGO</a></li>
+                <i class="fas fa-shopping-cart" onclick="window.location.href = '/public/carritoCompra.html';"></i>
+                <div class="dropdown">  <i class="fas fa-bars" id="dropdownToggle"></i>  
+                    <div class="dropdown-content"> 
+                        <a href="/public/editarPerfilComprador.html">Editar Perfil</a>
+                        <a href="/public/metodoPagoComprador.html">Método de Pago</a>
+                        <a href="/public/restablecerContraseñaComprador.html">Cambiar contraseña</a>
+                        <a href="/public/inicio.html">Cerrar sesión</a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="tarjetaContainer">
+            <h2>MÉTODO DE PAGO REGISTRADO</h2>
+            <div class="inputsSections">
+                <i class="fa fa-credit-card"></i>
+                <div class="numeroTarjetaContainer">
+                    <div id="numeroTarjetaDisplay"></div>
+                    <input type="hidden" class="numeroTarjeta" placeholder="NUMERO DE LA TARJETA">
+                </div>
+            </div>
+            <button onclick="eliminarTarjeta()">ELIMINAR</button>
+        </div>
+
+        <div class="container">
+            <h2>REGISTRO TARJETA DE DEBITO/CREDITO</h2>
+            <div class="inputsSections">
+                <i class="fas fa-bars"></i>
+                <input type="text" id="nombreTarjeta" placeholder="NOMBRE EN LA TARJETA">
+            </div>
+            <div class="inputsSections">
+                <i class="fa fa-credit-card"></i>
+                <input type="text" id="numeroTarjeta" placeholder="NUMERO DE LA TARJETA">
+            </div>
+            <div class="inputsSections">
+                <i class="fa fa-calendar"></i>
+                <input type="month" id="fechaVencimiento" placeholder="FECHA DE VENCIMIENTO">
+            </div>
+            <div class="inputsSections">
+                <i class="fas fa-lock"></i>
+                <input type="text" id="codigoSeguridad" placeholder="CODIGO DE SEGURIDAD(CVV)">
+            </div>
+
+            <button onclick="agregarTarjeta()">AGREGAR</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="/public/paginaInicioComprador.html">INICIO</a></li>
+                <li><a href="/public/misPedidosComprador.html">MIS PEDIDOS</a></li>
+                <li><a href="/public/catalogoComprador.html">CATÁLOGO</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="../public/scripts/metodoPagoComprador.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

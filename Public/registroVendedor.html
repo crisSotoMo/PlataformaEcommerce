@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse Vendedor - Logic Lab</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/registroVendedor.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="logInAndSignInContainer">
+        <div class="logInAndSignInTitleContainer">
+            <ul class="logInAndSignInTitle" id="logInAndSignInTitle">
+                <li><a href="#login">INICIAR SESION</a></li>
+                <li><a href="#signup">REGISTRARSE</a></li>
+            </ul>
+
+            <div class="underline"></div>
+        </div>
+
+        <!-- Formulario Sign In Vendedor -->
+        <div class="logInAndSignInDetail" id="logInAndSignInDetail">
+            <form action="" class="formulario">
+
+                <div class="inputsSections">
+                    <i class="fas fa-camera"></i> <label for="fotoVendedor" class="fotoVendedor">Foto</label>
+                    <br>
+                    <input type="file" id="fotoVendedor" name="fotoVendedor" required>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="nombreVendedor" name="nombreVendedor"
+                        placeholder="Nombre" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="apellidoVendedor" name="apellidoVendedor"
+                        placeholder="Apellido" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-id-card"></i> <input type="text" id="tipoIdentificacionVendedor"
+                        name="tipoIdentificacionVendedor" placeholder="Tipo de Indentificacion" required
+                        class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-barcode"></i> <input type="text" id="numeroIdentificacionVendedor"
+                        name="numeroIdentificacionVendedor" placeholder="Numero Identificacion" required
+                        class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-envelope"></i> <input type="email" id="correoElectronicoVendedor"
+                        name="correoElectronicoVendedor" placeholder="Correo Electronico" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-phone"></i> <input type="text" id="telefonoVendedor" name="telefonoVendedor"
+                        placeholder="Telefono" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-store"></i> <input type="text" id="nombreDelComercio" name="nombreDelComercio"
+                        placeholder="Nombre del Comercio" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-money-bill-alt"></i> <input type="text" id="numeroCuentaIbanVendedor"
+                        name="numeroCuentaIbanVendedor" placeholder="Numero de Cuenta IBAN" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-file-upload"></i> <label for="permisosMunicipalesVendedorLabel"
+                        class="permisosMunicipalesVendedorLabel">Permisos Municipales</label>
+                    <br>
+                    <input type="file" id="permisosMunicipalesVendedor" name="permisosMunicipalesVendedor" required>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="submit" id="signInButton" class="signInButton" name="signInButton" value="REGISTRARSE">
+                    <a class="forgot" href="#">Terminos y Condiciones</a>
+                </div>
+            </form>
+</body>
+
+</html>

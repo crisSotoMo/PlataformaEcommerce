@@ -1,0 +1,107 @@
+body {
+    font-family: "Montserrat";
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* .catalogoCuerpo {
+    border: solid 2px black;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table {
+    justify-content: center;
+    padding: 80px;
+    align-items: center;
+
+} */
+
+.catalogoCuerpo {
+    padding: 30px;
+    h1 {
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: large;
+    }
+}
+
+table {
+    width: 100%;
+    padding: 30px;
+    border-collapse: collapse;
+
+  }
+  
+  th, td {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    vertical-align: middle;
+
+  }
+  
+  th {
+    background-color: #E1E1E1;
+    text-align: left;
+    text-indent: 6px;
+    padding: 20px;
+    font-weight: 600;
+  }
+  
+  tfoot {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    margin-right: 8px;
+  }
+
+
+
+.product {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+        width: auto;
+      }
+
+    p {
+        flex-grow: 1;
+        text-align: center;
+      }
+}
+
+.inputButton{
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100px; /* Set height for demonstration */
+}
+
+.button {
+  font-family: Montserrat;
+  cursor: pointer;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 15px;
+  display: inline-block; /* Ajuste automático al ancho del contenido */
+}
+
+.primaryButton {
+  font-size: 18px;
+  background-color: #043965;
+  color: #fff;
+}
+
+.secondaryButton {
+  font-size: 12px;
+  background-color: #e1e1e1;
+  color: black;
+}

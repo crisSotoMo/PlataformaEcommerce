@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  }
+
+/* Main styles*/
+main {
+    border: 2px solid   yellow;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+/* Form Styles */
+form {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+  
+hr {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+  
+/* Inputs Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+  
+/* Placeholder Styles */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ccc;
+}
+  
+::-moz-placeholder { /* Firefox 19+ */
+    color: #ccc;
+}
+  
+:-ms-input-placeholder { /* IE 10+ */
+    color: #ccc;
+}
+  
+:-moz-placeholder-shown { /* Firefox 19+ */
+    color: #ccc;
+}
+  
+/* Button Styles */
+button {
+    margin-top: 15px;
+    float: right;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Montserrat"
+}
+  
+/* Design Styles */
+.campo-imagen {
+    display: flex;
+    align-items: center;
+}
+  
+.campo-imagen input {
+    margin-right: 10px;
+}
+  
+.campo-imagen img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+  
+/* Media queries */
+@media (max-width: 500px) {
+    form {
+      width: 90%;
+    }
+}

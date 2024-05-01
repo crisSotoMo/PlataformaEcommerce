@@ -1,0 +1,92 @@
+/* Seccion de Productores */
+main {
+    font-family: "Montserrat";
+    height: 800px;
+    padding: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 36px;
+    margin: 25px;
+}
+
+.imagenProductor {
+    border: 1px solid #E1E1E1;
+    border-radius: 100%;
+    background-color: #FFF;
+    width: 125px;
+    margin-bottom: 25px;
+}
+
+.productoresContenedorInformacion {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productoresContendorPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verProductoresLink {
+    text-decoration: none;
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #042A51;
+    border-radius: 100%;
+    background-color: #042A51;
+    padding: 25px;
+    color: #fff;
+}
+
+/* Seccion de Solicitudes de Registro */
+
+.solicitudesRegistroTabla {
+    width: calc(100% - 25px);
+    /* Ancho de la tabla - Margen derecho */
+    border-collapse: collapse;
+    margin: 25px auto;
+    /* Centra la tabla y aplica un margen superior e inferior */
+}
+
+.solicitudesRegistroTabla th,
+.solicitudesRegistroTabla td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.solicitudesRegistroTabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.solicitudesRegistroTabla th {
+    background-color: #042A51;
+    color: white;
+}
+
+.solicitudesRegistroTabla td img {
+    height: 16px;
+    margin-right: 8px;
+}
+
+.imagenTablaSolicitudes {
+    width: 25px;
+}
+
+.solicitudesRegistroTabla td a {
+    text-decoration: none;
+}

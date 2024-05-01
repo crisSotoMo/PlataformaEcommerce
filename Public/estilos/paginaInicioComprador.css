@@ -1,0 +1,179 @@
+main{
+    font-family: 'Montserrat';
+    padding: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+/* Seccion de catalogo */
+
+h2 {
+
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.catalogoContenedorPrincipal{
+    display: flex;
+}
+
+.catalogoContendorProducto{
+
+    border: 1px #8DC63F;
+    border-radius: 10px;
+    width: 250px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+}
+
+.imagencatalogoProducto{
+    width: 100%;
+}
+
+.contenedorImagencatalogoProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+
+}
+
+.informacionProductoContedor{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.informacionPrimeraFila{
+
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.informacionSegundaFila{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.textoSegundaFila{
+
+    margin-right: 10px;
+
+}
+
+.informacionTerceraFila{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logoTramo{
+    width: 50px;
+}
+
+.contenedorTramo{
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedorTramo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.botonIrcatalogo{
+
+    border: 1px solid #042A51;
+    text-decoration: none;
+    color: #fff;
+    background-color: #042A51;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 45px;
+
+}
+
+.botonIrcatalogo:hover, .vercatalogoBoton:hover {
+   background-color: #525146;
+}
+
+.vercatalogoContenedor{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.vercatalogoBoton{
+
+    border-radius: 6px;
+    background-color: #042A51;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Seccion de Mis Pedidos */
+
+.tablasCompradorPaginaInicio {
+    width: calc(100% - 25px);
+    /* Ancho de la tabla - Margen derecho */
+    border-collapse: collapse;
+    margin: 25px auto;
+    /* Centra la tabla y aplica un margen superior e inferior */
+}
+
+.tablasCompradorPaginaInicio th,
+.tablasCompradorPaginaInicio td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablasCompradorPaginaInicio tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tablasCompradorPaginaInicio th {
+    background-color: #042A51;
+    color: white;
+}
+
+.nombreProducto {
+    display: flex;
+    align-items: center;
+}
+
+.nombreProducto img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+
+
+
+

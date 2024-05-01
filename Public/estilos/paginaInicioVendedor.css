@@ -1,0 +1,72 @@
+main {
+    background-color: #E1E1E1;
+    font-family: 'Montserrat';
+    padding: 5PX;
+    height: 800PX;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+
+/* Seccion de Tablas */
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 25px;
+    text-align: center;
+}
+
+.tablasVendedorPaginaInicio {
+    width: calc(100% - 25px);
+    /* Ancho de la tabla - Margen derecho */
+    border-collapse: collapse;
+    margin: 25px auto;
+    /* Centra la tabla y aplica un margen superior e inferior */
+}
+
+.tablasVendedorPaginaInicio th,
+.tablasVendedorPaginaInicio td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablasVendedorPaginaInicio tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tablasVendedorPaginaInicio th {
+    background-color: #042A51;
+    color: white;
+}
+
+.nombreProducto {
+    display: flex;
+    align-items: center;
+}
+
+.nombreProducto img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Seccion de los Botones */
+
+.editarBoton {
+
+    border: 1px solid;
+    text-decoration: none;
+    color: #fff;
+    background-color: #042A51;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.editarBoton:hover {
+
+    background-color: #525146;
+
+}

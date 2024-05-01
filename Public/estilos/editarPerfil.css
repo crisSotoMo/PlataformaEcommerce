@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+  font-family: "Montserrat";
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Estilos del formulario */
+
+.pictureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+  width: 80%;
+  img {
+    width: 50%;
+    margin: 10px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  min-height: 240px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat";
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex; /* Cambiar a flexbox */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: center; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+}
+
+.containerTitle {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  font-family: Montserrat;
+  width: 100%; /* Ancho del formSection */
+  position: sticky; /* Hace que el título se quede fijo */
+  top: 0; /* Fija el título en la parte superior */
+  background-color: #fff; /* Añade un fondo blanco para que el título sea visible */
+  padding: 15px; /* Añade espacio alrededor del título */
+  z-index: 1; /* Asegura que el título esté por encima del contenido */
+}
+
+.containerBody {
+  flex-grow: 1; /* El containerBody ocupa todo el espacio vertical disponible */
+  display: flex; /* Utilizar flexbox para alinear verticalmente los elementos */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: space-between; /* Alinear los elementos verticalmente con espacio uniforme */
+  width: 100%; /* Ancho del formSection */
+}
+
+.sectionTitle {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  text-indent: 2px;
+}
+
+.formSection {
+  width: 100%; /* Ancho del formSection */
+  margin: auto; /* Centrar horizontalmente el formSection */
+}
+
+.sectionInput {
+  width: 80%;
+  padding: 5px;
+  font-family: "Montserrat";
+}
+
+.button {
+  font-family: Montserrat;
+  cursor: pointer;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 15px;
+  display: inline-block; /* Ajuste automático al ancho del contenido */
+}
+
+.primaryButton {
+  font-size: 18px;
+  background-color: #043965;
+  color: #fff;
+}
+
+.secondaryButton {
+  font-size: 12px;
+  background-color: #e1e1e1;
+  color: black;
+}
+
+.inputButtons {
+  margin-top: 20px;
+  align-self: center; /* Mover el botón al final del contenedorBody */
+}
