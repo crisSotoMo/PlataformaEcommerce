@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/registroProductos.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src='../public/imagenes/produMarketLogo.png' alt="logoCNP">
+            <h1>ProduMarket</h1>
+        </div>
+        <nav class="navHeader">
+            <ul>
+                <li><a href="/public/paginaInicioVendedor.html">INICIO</a></li>
+                <li><a href="/public/reportesVendedor.html">REPORTES</a></li>
+                <li><a href="/public/inventarioVendedor.html">MI CATÁLOGO</a></li>
+                <li><a href="/public/solicitudPedidosVendedores.html">SOLICITUD DE PEDIDOS</a></li>
+                <i class="fas fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" id="productRegister">
+            <h2 id="subtitle">AGREGAR UN NUEVO PRODUCTO</h2>
+            <hr>
+            <label for="category">Categoría</label>
+            <select name="" id="category">
+                <option value="" disabled selected>Elegir categoría:</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="productName">Nombre del producto</label>
+            <input type="text" id="productName">
+            <label for="quantity">Cantidad</label>
+            <input type="number" id="quantity">
+            <label for="price">Precio</label>
+            <input type="number" id="price">
+            <label for="tax">Impuesto</label>
+            <input type="number" id="tax">
+            <label for="productImage">Imagen</label>
+            <input type="file" id="productImage">
+            <button id="agregar">
+                Agregar producto
+            </button>
+        </form>
+    </main>
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="#">REPORTES</a></li>
+                <li><a href="#">MI CATÁLOGO</a></li>
+                <li><a href="#">SOLICITUD DE PEDIDOS</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="footerDescription">
+            <p>Para más información, puede contactarnos al correo info@produmarket.com.</p>
+        </section>
+        <section class="copyrights">
+            <p>© 2024 ProduMarket. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

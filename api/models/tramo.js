@@ -4,7 +4,6 @@ const schema_tramo = new mongoose.Schema({
     cuentaIBAN: {type: String, required: true, unique: false},
     nombreComercio: {type: String, required: true, unique: true}, 
     permisosMunicipales: {type: String, required: true, unique: false},
-    fechaNacimiento: {type: Date, required: false, unique: false},
     ubicacion: {type: String, required: true, unique: false},
     estadoSolicitud: {type: String, required: true, unique: false},
     calificaciones: [

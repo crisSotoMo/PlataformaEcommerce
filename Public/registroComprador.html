@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse Comprador- Logic Lab</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="../public/estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/estilos/registroComprador.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="logInAndSignInContainer">
+        <div class="logInAndSignInTitleContainer">
+            <ul class="logInAndSignInTitle" id="logInAndSignInTitle">
+                <li><a href="/public/iniciarSesion.html">INICIAR SESION</a></li>
+                <li><a href="/public/registro.html">REGISTRARSE</a></li>
+            </ul>
+
+            <div class="underline"></div>
+        </div>
+
+        <!-- Formulario Sign In Comprador | Administrador -->
+        <div class="logInAndSignInDetail" id="logInAndSignInDetail">
+            <form action="" class="formulario" id="formRegistro">
+                <div class="inputsSections">
+                    <img id="foto-usuario">
+                    <i class="fas fa-camera"></i> <label for="btn-subir-foto" class="fotoUsuarioLabel">Foto</label>
+                    <button type="button" id="btn-subir-foto">Subir Foto</button>
+                </div>
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="nombreComprador" name="nombreComprador"
+                        placeholder="Nombre" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-user-alt"></i> <input type="text" id="apellidoComprador" name="apellidoComprador"
+                        placeholder="Apellido" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <div id="radioIcon"><i class="fas fa-id-card"></i></div>
+                    <div id="radioInput">
+                        <input type="radio" id="tipoIdentificacionNacional" name="tipoIdentificacionComprador"
+                            value="nacional" required checked>
+                        <label for="tipoIdentificacionNacional">CÉDULA</label>
+                        <input type="radio" id="tipoIdentificacionExtranjero" name="tipoIdentificacionComprador"
+                            value="extranjero" required>
+                        <label for="tipoIdentificacionExtranjero">DIMEX</label>
+                    </div>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-barcode"></i> <input type="text" id="numeroIdentificacionComprador"
+                        name="numeroIdentificacionComprador" placeholder="Numero Identificacion" required
+                        class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-envelope"></i> <input type="email" id="correoElectronicoComprador"
+                        name="correoElectronicoComprador" placeholder="Correo Electronico" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-phone"></i> <input type="text" id="telefonoComprador" name="telefonoComprador"
+                        placeholder="Telefono" required class="input"><br>
+                </div>
+
+                <div class="inputsSections">
+                    <input type="submit" class="signInButton" id="signInButton" name="signInButton" value="REGISTRARSE">
+                    <a class="forgot" href="#">Terminos y Condiciones</a>
+                </div>
+            </form>
+
+            <!-- SCRIPTS -->
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="/public/scripts/servicios/registroCompradorServicio.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

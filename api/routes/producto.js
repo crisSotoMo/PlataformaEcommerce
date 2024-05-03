@@ -3,6 +3,8 @@ const express = require("express");
 const Producto = require("../models/producto");
 const router = express.Router();
 
+
+
 //http://localhost:8000/producto/registrar
 //POST --> crear nuevos registros de productos 
 router.post("/registrar", function (req, res) {
