@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion - Logic Lab</title>
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="../../estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/iniciarSesion.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="logInAndSignInContainer">
+        <div class="logInAndSignInTitleContainer">
+            <ul class="logInAndSignInTitle" id="logInAndSignInTitle">
+                <li><a href="../login/iniciarSesion.html">INICIAR SESION</a></li>
+                <li><a href="../registro/registro.html">REGISTRARSE</a></li>
+            </ul>
+
+            <div class="underline"></div>
+        </div>
+
+        <!-- Formulario Log in -->
+        <div class="logInAndSignInDetail" id="logInAndSignInDetail">
+            <form action="" class="formulario" id="loginForm">
+
+                <div class="inputsSections">
+                    <i class="fas fa-user"></i> <input type="text" id="usuario" name="usuario" placeholder="Ingrese su Identificación"
+                        required class="input">
+                    <br>
+                </div>
+
+                <div class="inputsSections">
+                    <i class="fas fa-lock"></i> <input type="text" id="contrasena" name="contrasena"
+                        placeholder="Ingrese su contraseña" required class="input"><br>
+                </div>
+                <div class="inputsSections">
+                    <input type="submit" id="logInButton" class="logInButton" name="logInButton" onclick="loginService(event)" value="INICIAR SESION">
+                    <a class="forgot" href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../public/scripts/servicios/authServicio.js"></script>
+
+</body>
+
+</html>
