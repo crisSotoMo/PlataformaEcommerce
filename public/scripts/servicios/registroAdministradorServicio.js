@@ -1,6 +1,8 @@
 //SERVICIO PARA REGISTRAR USUARIO
 
-const formRegistro = document.getElementById("formRegistro")
+const formRegistro = document.getElementById("formRegistro");
+const userPhoto = document.querySelector("#foto-usuario");
+const userPhotoButton = document.querySelector("#btn-subir-foto");
 
 // Generar contraseña aleatoria
 const generarContrasenaTemporal = () => {
@@ -195,6 +197,7 @@ async function registro(evento) {
     const telefono = document.querySelector('#telefonoAdministrador').value;
     const rol = "administrador";
     const contrasena = generarContrasenaTemporal();
+    const foto = userPhoto.src;
     try {
         const respuesta = await fetch("http://localhost:3000/api/usuario/register", {
             method: "POST",
@@ -210,6 +213,7 @@ async function registro(evento) {
                 telefono,
                 rol,
                 contrasena,
+                foto
             }),
         });
         const NewUser = await respuesta.json();
@@ -231,3 +235,9 @@ async function registro(evento) {
         console.error(error);
     }
 }
+
+/*Action Button*/
+userPhotoButton.addEventListener("click", () => {
+    widget_cloudinary.open();
+}, false);
+

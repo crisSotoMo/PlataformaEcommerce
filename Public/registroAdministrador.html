@@ -33,7 +33,7 @@
         <!-- Formulario Sign In Administrador -->
         <div class="logInAndSignInDetail" id="logInAndSignInDetail">
             <form action="" class="formulario" id="formRegistro">
-                <div class="inputsSections">
+                <div class="inputsSections" id="foto">
                     <img id="foto-usuario">
                     <i class="fas fa-camera"></i> <label for="btn-subir-foto" class="fotoUsuarioLabel">Foto</label>
                     <button type="button" id="btn-subir-foto">Subir Foto</button>
@@ -44,8 +44,8 @@
                 </div>
 
                 <div class="inputsSections">
-                    <i class="fas fa-user-alt"></i> <input type="text" id="apellidoAdministrador" name="apellidoAdministrador"
-                        placeholder="Apellido" required class="input"><br>
+                    <i class="fas fa-user-alt"></i> <input type="text" id="apellidoAdministrador"
+                        name="apellidoAdministrador" placeholder="Apellido" required class="input"><br>
                 </div>
 
                 <div class="inputsSections">
@@ -68,12 +68,13 @@
 
                 <div class="inputsSections">
                     <i class="fas fa-envelope"></i> <input type="email" id="correoElectronicoAdministrador"
-                        name="correoElectronicoAdministrador" placeholder="Correo Electronico" required class="input"><br>
+                        name="correoElectronicoAdministrador" placeholder="Correo Electronico" required
+                        class="input"><br>
                 </div>
 
                 <div class="inputsSections">
-                    <i class="fas fa-phone"></i> <input type="text" id="telefonoAdministrador" name="telefonoAdministrador"
-                        placeholder="Telefono" required class="input"><br>
+                    <i class="fas fa-phone"></i> <input type="text" id="telefonoAdministrador"
+                        name="telefonoAdministrador" placeholder="Telefono" required class="input"><br>
                 </div>
 
                 <div class="inputsSections">
@@ -85,6 +86,8 @@
             <!-- SCRIPTS -->
             <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <!--Script Cloudinary-->
+            <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
             <script src="/public/scripts/servicios/registroAdministradorServicio.js"></script>
         </div>
     </div>
