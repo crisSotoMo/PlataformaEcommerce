@@ -126,7 +126,16 @@ ul {
 }
 
 #foto {
-  display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar elementos horizontalmente */
+    width: 80%;
+    margin-left: 25px;
+    img {
+      width: 50%;
+      margin: 10px;
+    }
 }
 
 .fotoUsuarioLabel{
