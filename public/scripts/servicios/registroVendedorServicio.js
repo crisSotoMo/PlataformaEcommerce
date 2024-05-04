@@ -1,6 +1,8 @@
 // SERVICIO PARA REGISTRAR USUARIO
 
 const formRegistro = document.getElementById("formRegistro")
+const userPhoto = document.querySelector("#foto-usuario");
+const userPhotoButton = document.querySelector("#btn-subir-foto");
 
 //Generar contraseña aleatoria
 const generarContrasenaTemporal = () => {
@@ -158,6 +160,16 @@ const validarFechaNacimiento = () => {
     return error;
 };
 
+let widget_cloudinary = cloudinary.createUploadWidget({
+    cloudName: "dqceegh2x",
+    uploadPreset: "sellers_preset"
+}, (error, result) => {
+    if (!error && result && result.event === "success") {
+        console.log("Imagen registrada", result.info);
+        userPhoto.src = result.info.secure_url;
+    }
+});
+
 // Obtener datos del formulario
 const obtenerDatos = () => {
     debugger;
@@ -234,6 +246,7 @@ async function registro(evento) {
     const fechaNacimiento = document.querySelector('#fechaNacimiento').value;
     const rol = "vendedor";
     const contrasena = generarContrasenaTemporal();
+    const foto = photo.src;
     try {
         const respuesta = await fetch("http://localhost:3000/api/usuario/register_seller", {
             method: "POST",
@@ -252,6 +265,7 @@ async function registro(evento) {
                 fechaNacimiento,
                 rol,
                 contrasena,
+                foto
             }),
         });
         const NewUser = await respuesta.json();
@@ -277,3 +291,8 @@ async function registro(evento) {
         console.error(error);
     }
 }
+
+/*Action Button*/
+userPhotoButton.addEventListener("click", () => {
+    widget_cloudinary.open();
+}, false);
