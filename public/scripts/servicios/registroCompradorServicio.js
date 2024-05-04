@@ -1,6 +1,8 @@
 //SERVICIO PARA REGISTRAR USUARIO
 
-const formRegistro = document.getElementById("formRegistro")
+const formRegistro = document.getElementById("formRegistro");
+const userPhoto = document.querySelector("#foto-usuario");
+const userPhotoButton = document.querySelector("#btn-subir-foto");
 
 //Generar contraseña aleatoria
 const generarContrasenaTemporal = () => {
@@ -191,6 +193,16 @@ signInButton.addEventListener("click", async (evento) => {
     }
 });
 
+let widget_cloudinary = cloudinary.createUploadWidget({
+    cloudName: "dqceegh2x",
+    uploadPreset: "sellers_preset"
+}, (error, result) => {
+    if (!error && result && result.event === "success") {
+        console.log("Imagen registrada", result.info);
+        userPhoto.src = result.info.secure_url;
+    }
+});
+
 //SERVICIO PARA REGISTRAR USUARIO
 async function registro(evento) {
     debugger;
@@ -204,6 +216,7 @@ async function registro(evento) {
     const telefono = document.querySelector('#telefonoComprador').value;
     const rol = "comprador";
     const contrasena = generarContrasenaTemporal();
+    const foto = photo.src;
     try {
         const respuesta = await fetch("http://localhost:3000/api/usuario/register", {
             method: "POST",
@@ -219,6 +232,7 @@ async function registro(evento) {
                 telefono,
                 rol,
                 contrasena,
+                foto
             }),
         });
         const NewUser = await respuesta.json();
@@ -241,4 +255,9 @@ async function registro(evento) {
         console.error(error);
     }
 }
+
+/*Action Button*/
+userPhotoButton.addEventListener("click", () => {
+    widget_cloudinary.open();
+}, false);
 
