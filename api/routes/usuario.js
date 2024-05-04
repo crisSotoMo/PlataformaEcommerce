@@ -37,11 +37,12 @@ router.post("/ingresar", function (req, res) {
 router.post('/register', async (req, res)=> {
     try{
         const newUser = new Usuario(req.body);
+        console.log(newUser);
         await newUser.save();
         res.status(201).json(newUser);
     } catch(error){
         console.error(error);
-        res.status(500).json({message: 'Hubo un error al crear el suaurio'})
+        res.status(500).json({message: 'Hubo un error al crear el usuario'})
     }
 });
 
