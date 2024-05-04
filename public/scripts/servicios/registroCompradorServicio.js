@@ -216,7 +216,7 @@ async function registro(evento) {
     const telefono = document.querySelector('#telefonoComprador').value;
     const rol = "comprador";
     const contrasena = generarContrasenaTemporal();
-    const foto = photo.src;
+    const foto = userPhoto.src;
     try {
         const respuesta = await fetch("http://localhost:3000/api/usuario/register", {
             method: "POST",

@@ -246,7 +246,7 @@ async function registro(evento) {
     const fechaNacimiento = document.querySelector('#fechaNacimiento').value;
     const rol = "vendedor";
     const contrasena = generarContrasenaTemporal();
-    const foto = photo.src;
+    const foto = userPhoto.src;
     try {
         const respuesta = await fetch("http://localhost:3000/api/usuario/register_seller", {
             method: "POST",
