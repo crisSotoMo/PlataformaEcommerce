@@ -195,7 +195,7 @@ signInButton.addEventListener("click", async (evento) => {
 
 let widget_cloudinary = cloudinary.createUploadWidget({
     cloudName: "dqceegh2x",
-    uploadPreset: "sellers_preset"
+    uploadPreset: "customers_preset"
 }, (error, result) => {
     if (!error && result && result.event === "success") {
         console.log("Imagen registrada", result.info);
